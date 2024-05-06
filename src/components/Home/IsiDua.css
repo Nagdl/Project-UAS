@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.containerIsiDua{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+}
+
+.Judul{
+    text-align: center;
+    width: 480px;
+    font-size: 35Px;
+    font-weight: bold;
+    color: rgb(218, 191, 72);
+    margin: 30px auto;
+    border-bottom: 3px solid;
+}
+
+@media(min-width: 993px){
+    .desc2{
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
+
+.desc2{
+    align-items: center;
+}
+
+.Lampung img{
+    width: 543px;
+    height: 267px;
+}
+
+.Text{
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+}

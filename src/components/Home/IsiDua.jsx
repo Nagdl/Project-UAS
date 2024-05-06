@@ -14,7 +14,7 @@ function IsiDua() {
                     <img src={LampungDesc} />
                 </div>
                 <div className="Text">
-                    <p>Lampung adalah sebuah provinsi di bagian ujung selatan Pulau Sumatra, Indonesia. Ibu kota provinsi ini terletak di Kota Bandar Lampung.[11] Provinsi ini memiliki dua kota, yaitu Kota Bandar Lampung dan Kota Metro, serta 13 kabupaten. Secara geografis, posisi provinsi ini di sebelah barat berbatasan dengan Samudra Hindia, di sebelah timur dengan Laut Jawa, di sebelah utara berbatasan dengan Provinsi Sumatera Selatan dan Provinsi Bengkulu, serta di sebelah selatan berbatasan dengan Selat Sunda.</p>
+                    <p>Provinsi Lampung menawarkan keunikan yang luar biasa dengan gabungan keindahan alamnya yang memikat dan warisan budaya yang kaya. Dikenal sebagai 'Negeri Seribu Bukit', Lampung mempesona dengan perbukitan hijau yang menghampar luas serta pantainya yang menakjubkan. Keberagaman budaya Lampung tercermin dalam tarian, musik, dan kuliner khasnya yang menggugah selera.</p>
                 </div>
             </div>
         </div>

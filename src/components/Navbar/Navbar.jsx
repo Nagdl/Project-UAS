@@ -2,6 +2,7 @@ import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 
+
 function Navbar(){
     return(
         <div className="containerNavbar">

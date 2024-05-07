@@ -12,7 +12,7 @@ function IsiSatu() {
               </video>
             </div>
             <div className="desc">
-              <img src={saibumi}  />
+              <img src={saibumi} />
               <div className="iniButton">
                 <button oncli type="button">Explore</button>
                 </div>

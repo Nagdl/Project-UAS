@@ -1,5 +1,6 @@
 import "./Navbar.css";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 
 function Navbar(){
     return(
@@ -7,7 +8,7 @@ function Navbar(){
             <div className="isiNavbar">
                 <img src={logo} alt="" className="logo"/>
                 
-                <nav>
+                <nav className="stroke">
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Main</a></li>
@@ -18,7 +19,7 @@ function Navbar(){
                 
                 <div className="search-box">
                     <input type="text" placeholder='Search' />
-                    <img src="" alt="" />
+                    <FontAwesomeIcon icon="fa-solid fa-magnifying-glass"/>
                 </div>
 
             </div>

@@ -27,6 +27,7 @@
 
 .desc{
     text-align: center;
+    user-select: none;
 }
 
 .desc img{

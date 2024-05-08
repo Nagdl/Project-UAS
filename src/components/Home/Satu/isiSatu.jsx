@@ -1,7 +1,7 @@
 import React from "react";
-import "./isiSatu.css";
-import lampung from "../../assets/VideoLampung.mp4"
-import saibumi from "../../assets/saibumi.webp"
+import "../Satu/isiSatu.css";
+import lampung from "../../../assets/VideoLampung.mp4"
+import saibumi from "../../../assets/saibumi.webp"
 
 function IsiSatu() {
     return(

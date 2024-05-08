@@ -1,6 +1,6 @@
 import React from "react";
 import "./IsiDua.css";
-import LampungDesc from "../../assets/LampungDesc.jpg"
+import LampungDesc from "../../../assets/LampungDesc.jpg"
 
 function IsiDua() {
     return(

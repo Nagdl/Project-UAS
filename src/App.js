@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import IsiSatu from "./components/Home/isiSatu";
-import IsiDua from "./components/Home/IsiDua";
+import IsiSatu from "./components/Home/Satu/isiSatu";
+import IsiDua from "./components/Home/Dua/IsiDua";
 import "../src/App.css"
 
 function App() {

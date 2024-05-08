@@ -10,10 +10,12 @@ function App() {
       <div className="header">
         <Navbar/>  
       </div>
+
       <div className="container">
-      <IsiSatu/>
-      <IsiDua/>
+        <IsiSatu/>
+        <IsiDua/>
       </div>
+      
     </div>
   );
 }

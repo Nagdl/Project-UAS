@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/SigerLampung.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 
 
@@ -11,10 +11,10 @@ function Navbar(){
                 
                 <nav className="stroke">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Main</a></li>
-                        <li><a href="">Content</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Main</a></li>
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">About</a></li>
                     </ul>
                 </nav>
                 

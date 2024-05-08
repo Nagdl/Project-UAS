@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import IsiSatu from "./components/Home/Satu/isiSatu";
 import IsiDua from "./components/Home/Dua/IsiDua";
 import "../src/App.css"
+import IsiTiga from "./components/Home/Tiga/IsiTiga";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="container">
         <IsiSatu/>
         <IsiDua/>
+        <IsiTiga/>
       </div>
       
     </div>

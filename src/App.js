@@ -7,15 +7,20 @@ import IsiTiga from "./components/Home/Tiga/IsiTiga";
 
 function App() {
   return (
-    <div>
+    <div className="container">
+
       <div className="header">
         <Navbar/>  
       </div>
 
-      <div className="container">
+      <div>
         <IsiSatu/>
+        <div className="isiTiga">
+          <h1 className="judulIsiTiga">Destination Highlight</h1>
+          <IsiTiga/>
+          <hr/>
+        </div>
         <IsiDua/>
-        <IsiTiga/>
       </div>
       
     </div>

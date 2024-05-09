@@ -3,13 +3,14 @@ import "./Card.css";
 
 function Card(props) {
   return (
-    <div className="card">
-      <img src={props.image} />
-      <div className="box">
-        <h1>{props.name}</h1>
-      </div>
-      <div className="deskrip">
-        <p>{props.desk}</p>
+    <div className="cardContainer">
+      <div className="grid-item">
+        <div className="fotoCard">
+           <img src={props.image} />
+        </div>
+        <div className="namaWisata">
+            <p>{props.name}</p>
+        </div>
       </div>
     </div>
   );

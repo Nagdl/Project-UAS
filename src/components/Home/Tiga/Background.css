@@ -1,0 +1,61 @@
+.backContainer {
+    color: white;
+}
+
+.backContainer img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.backContainer::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        to top, #000000 10%, transparent
+    );
+    
+}
+
+.isi {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 500px;
+    max-width: 80%;
+    z-index: 1;
+}
+
+.isi p{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.isi h1{
+    font-size: 100px;
+    margin: 0;
+}
+
+@keyframes animasi {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.isi p, .isi h1{
+    transform: translateY(30px);
+    opacity: 0;
+    animation: animasi .5s .7s ease-in-out 1 forwards;
+}
+
+.isi h1{
+    animation-delay: 1s;
+}
+.isi p{
+    animation-duration: 1.3s;
+}

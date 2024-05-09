@@ -15,12 +15,10 @@ function App() {
 
       <div>
         <IsiSatu/>
-        <div className="isiTiga">
-          <h1 className="judulIsiTiga">Destination Highlight</h1>
-          <IsiTiga/>
-          <hr/>
-        </div>
         <IsiDua/>
+        <hr/>
+        <IsiTiga/>
+        
       </div>
       
     </div>

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Navbar(){
     return(
-        <div className="containerNavbar">
+        <div className="container-fluid containerNavbar">
             <div className="isiNavbar">
                 <img src={logo} alt="" className="logo"/>
                 

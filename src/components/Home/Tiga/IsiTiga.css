@@ -19,6 +19,7 @@
     height: 100%;
     position: absolute;
     left: 0;
+    right: 0;
     bottom: 0;
     background-image: linear-gradient(
         to top, #000000 10%, transparent
@@ -62,11 +63,12 @@
     gap: 10px;
     width: 100%;
     height: 250px;
-    padding: 0 50px;
+    padding: 0 50pxx;
     box-sizing: border-box;
     overflow: auto;
     justify-content: center;
 }
+
 .highlight::-webkit-scrollbar{
     width: 0;
 }

@@ -1,5 +1,5 @@
 .cardContainer{
-    width: 150px;
+    width: 180px;
     height: 220px;
     filter: brightness(.5);
     transition: .5s;
@@ -16,5 +16,7 @@
 
 .isiCard {
     position: absolute;
-    inset: auto 10px 10px 10px;
+    font-size: 18px;
+    font-weight: 500px;
+    inset: 180px 10px 10px 10px;
 }

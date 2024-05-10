@@ -16,17 +16,12 @@ function App() {
         <IsiSatu/>
         
       </div>
-        <div>
-          <IsiDua/>
-          <hr/>
-        </div>
-
-        <div>
-          <IsiTiga/>
-        </div>
-        
-
-      
+      <div>
+        <IsiDua/>
+      </div>
+      <div>
+        <IsiTiga/>
+      </div>
     </div>
   );
 }

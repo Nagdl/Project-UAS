@@ -32,6 +32,8 @@
 
 .desc img{
     margin: 45vh auto 20px;
+    width: 60%;
+    height: auto;
 }
 
 .iniButton button{
@@ -64,7 +66,6 @@
     color: black;
     background-color: brown;
 }
-
 
 .iniButton button,
 .iniButton button:after,

@@ -14,7 +14,8 @@ function App() {
       </div>
       <div>
         <IsiSatu/>
-
+        
+      </div>
         <div>
           <IsiDua/>
           <hr/>
@@ -24,7 +25,7 @@ function App() {
           <IsiTiga/>
         </div>
         
-      </div>
+
       
     </div>
   );

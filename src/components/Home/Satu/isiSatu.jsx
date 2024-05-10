@@ -5,7 +5,7 @@ import saibumi from "../../../assets/saibumi.webp"
 
 function IsiSatu() {
     return(
-        <div className="containerIsiSatu">
+        <div className="container-fluid containerIsiSatu">
             <div>
               <video className="iniVideo" autoPlay muted loop playsInline>
                 <source src={lampung} type="video/mp4" />

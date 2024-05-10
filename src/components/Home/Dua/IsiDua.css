@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .containerIsiDua{
-    margin-top: 100px;
     width: 100%;
     height: 50vh;
     font-family: "Raleway", sans-serif;
@@ -17,60 +16,34 @@
     border-bottom: 3px solid;
 }
 
-@media(min-width: 993px){
-    .desc2{
-        display: flex;
-        justify-content: space-around;
-    }
-}
-
-@media(max-width: 993px){
-    .Text p{
-        margin-top: 10px;
-    }
+/* CONTAINER UNTUK ISI DUA */
+.isiDua{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    justify-content: space-evenly;
 }
 
 
-.Lampung{
-    margin: 0 auto;
-    text-align: center; 
+/* GALLERY FOTO */
+.containerFoto{
+    width: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    justify-items: center;
 }
 
-.Lampung img{
-    width: 543px;
-    height: 267px;
+.fotoItem{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 200px;
 }
 
-.Text p{
-    margin-top: 20px;
-    
-}
-
-.Text{
-    width: 400px;
-    height: 267px;      
-    margin: 0 auto;
-}
-
-.containerIsiDua {
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    35% {
-        opacity: 0.3;
-    }
-    50% {
-        opacity: 0.6;
-    }
-    75% {
-        opacity: 0.8;
-    }
-    100% {
-        opacity: 1;
-    }
+.fotoItem img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }

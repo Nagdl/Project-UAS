@@ -1,23 +1,28 @@
 import React from "react";
+import "./../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Navbar from "./components/Navbar/Navbar";
 import IsiSatu from "./components/Home/Satu/isiSatu";
 import IsiDua from "./components/Home/Dua/IsiDua";
-import "../src/App.css"
 import IsiTiga from "./components/Home/Tiga/IsiTiga";
+import "../src/App.css";
 
 function App() {
   return (
-    <div className="container">
-
-      <div className="header">
+    <div className="container-large">
+      <div className="">
         <Navbar/>  
       </div>
-
       <div>
         <IsiSatu/>
-        <IsiDua/>
-        <hr/>
-        <IsiTiga/>
+
+        <div>
+          <IsiDua/>
+          <hr/>
+        </div>
+
+        <div>
+          <IsiTiga/>
+        </div>
         
       </div>
       

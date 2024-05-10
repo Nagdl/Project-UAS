@@ -46,3 +46,29 @@
     color: white;
     font-weight: bold;
 }
+
+.iniButton button{
+    width: 180px;
+    height: 40px;
+    background-color: rgb(218, 191, 72);
+    border: 0px solid;
+    user-select: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.iniButton button:hover{
+    color: black;
+    background-color: brown;
+}
+
+
+.iniButton button,
+.iniButton button:after,
+.iniButton button:before {
+    transition: all .7s;
+}
+

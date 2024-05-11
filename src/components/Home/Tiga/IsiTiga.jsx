@@ -4,7 +4,7 @@ import Wisata from "../Tiga/Wisata";
 import Card from "../Tiga/Card";
 import Back from "../Tiga/Background";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 function IsiTiga() {
   const [itemActive, setItemActive] = useState(0);
@@ -18,7 +18,7 @@ function IsiTiga() {
     const countItem = items.length;
 
     // event next click
-    next.onclick = function(){
+    const handleNextClick = () => {
       setItemActive(prevState => {
         let newActive = prevState + 1;
         if(newActive >= countItem){
@@ -26,10 +26,12 @@ function IsiTiga() {
         }
         return newActive;
       });
-    }
+    };
 
-    //event prev click
-    prev.onclick = function(){
+    next.addEventListener('click', handleNextClick);
+
+    // event prev click
+    const handlePrevClick = () => {
       setItemActive(prevState => {
         let newActive = prevState - 1;
         if(newActive < 0){
@@ -37,21 +39,25 @@ function IsiTiga() {
         }
         return newActive;
       });
-    }
+    };
+
+    prev.addEventListener('click', handlePrevClick);
 
     // click thumbnail
+    const handleClick = (index) => {
+      setItemActive(index);
+    };
+
     highlights.forEach((highlight, index) => {
-      highlight.addEventListener('click', () => {
-        setItemActive(index);
-      })
+      highlight.addEventListener('click', () => handleClick(index));
     });
 
     return () => {
       // Cleanup event listeners if component unmounts
-      next.onclick = null;
-      prev.onclick = null;
-      highlights.forEach(highlight => {
-        highlight.removeEventListener('click');
+      next.removeEventListener('click', handleNextClick);
+      prev.removeEventListener('click', handlePrevClick);
+      highlights.forEach((highlight, index) => {
+        highlight.removeEventListener('click', () => handleClick(index));
       });
     };
   }, []); // Empty dependency array ensures useEffect runs only once
@@ -76,7 +82,7 @@ function IsiTiga() {
   }
 
   return (
-    <div className="containerIsiTiga">
+    <div className="containerIsiTiga" id="slideFoto">
       <div className="list">
         {Wisata.map((wisata, index) => (
           <div className={`item ${index === 0 ? 'active' : ''}`} key={index}>
@@ -89,12 +95,12 @@ function IsiTiga() {
         ))}
       </div>
 
-      <div class="arrows">
+      <div className="arrows">
         <button id="prev">
           <FontAwesomeIcon icon={faArrowLeft} />
         </button>
         <button id="next">
-        <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
       

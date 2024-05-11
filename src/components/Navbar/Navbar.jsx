@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
 import logo from "../../assets/SigerLampung.png";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { Link } from "react-router-dom";
 
 
 function Navbar(){
@@ -44,7 +44,14 @@ function Navbar(){
                     <div className="sideBody tittleNav offcanvas-body d-flex flex-column p-4">
                         <ul className="stroke navbar-nav justify-content-center align-item-center fs-5 flex-grow-1 pe-3">
                             <li className="nav-item mx-2">
-                                <a className="nav-link" href="#">Home</a>
+                                <Link className="nav-link" to="/">Home</Link>
+                            </li>
+
+                            <li className="nav-item mx-2">
+                                <Link className="nav-link" to="/About">About Us</Link>
+                            </li>
+                            <li className="nav-item mx-2">
+                                <Link className="nav-link" to="/ContactUs">Contact Us</Link>
                             </li>
 
                             <li className="nav-item mx-2">
@@ -70,26 +77,6 @@ function Navbar(){
                     </div>
                 </div>
             </div>
-
-{/* 
-            //      <div className="isiNavbar">
-//                 <nav className="stroke">
-//                     <ul>
-//                         <li><a href="#">Home</a></li>
-//                         <li><a href="#">Main</a></li>
-//                         <li><a href="#">Content</a></li>
-//                         <li><a href="#">About</a></li>
-//                     </ul>
-//                 </nav>
-                
-//                 <div className="search-box">
-//                     <input type="text" placeholder='Search' />
-//                     <FontAwesomeIcon icon="fa-solid fa-magnifying-glass"/>
-//                 </div>
-
-//             </div>
-//         </div> */}
-
         </nav>
     );
 }

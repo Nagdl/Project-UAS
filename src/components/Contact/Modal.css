@@ -1,0 +1,97 @@
+.deskripsiModal{
+    transform: translateY(30px);
+    opacity: 0;
+    animation: animasi .5s .7s ease-in-out 1 forwards;
+    text-align: center;
+}
+
+.containerModal{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center ;
+    align-items: center;
+    background: rgb(252,252,252);
+    background: radial-gradient(circle, rgba(252,252,252,1) 0%, rgba(0,0,0,1) 70%);
+}
+
+#ButtonModal {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+  
+#ButtonModal:hover {
+    letter-spacing: 3px;
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
+}
+  
+#ButtonModal:active {
+    letter-spacing: 3px;
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.modal-dialog-centered {
+    max-width: 600px;
+}
+
+.iniInput {
+    height: 44px;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.iniTA {
+    height: 200px;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+  
+.label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+  
+.iniInput:hover, .iniInput:focus, .inputModal:hover .iniInput {
+    outline: none;
+    border-color: #05060f;
+}
+
+.iniTA:hover, .iniTA:focus, .inputModal:hover .iniTA {
+    outline: none;
+    border-color: #05060f;
+}
+  
+.inputModal:hover .label, .iniInput:focus, .iniTA:focus {
+    color: #05060fc2;
+}
+
+.SubmitButton{
+    width: 100%;
+}

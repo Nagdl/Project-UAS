@@ -10,7 +10,7 @@
     overflow: hidden;
     opacity: 0;
     transition: .5s;
-    margin: 10%;
+    margin: 7%;
 }
 
 .list::after{
@@ -22,7 +22,7 @@
     right: 0;
     bottom: 0;
     background-image: linear-gradient(
-        to bottom, #000000 10%, transparent
+        to top, rgb(0, 0, 0) 0%, rgba(118,88,39,1) 99%
     );
 }
 
@@ -33,18 +33,20 @@
 
 .arrows{
     position: absolute;
-    top: 30%;
-    right: 50px;
-    z-index: 100;
+    bottom: 260px;
+    right: 15%;
+    z-index: 100;   
 }
+
 .arrows button{
     background-color: #eee5;
+    color: #eee;
     font-size: 25px;
     border: none;
-    width: 80px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 50%;
     color: #eee;
     transition: .5s;
 }
@@ -56,13 +58,12 @@
 
 .highlight{
     position: absolute;
-    bottom: 50px;
+    bottom: 0;
     z-index: 11;
     display: flex;
     gap: 10px;
     width: 100%;
     height: 250px;
-    padding: 0 50pxx;
     box-sizing: border-box;
     overflow: auto;
     justify-content: center;
@@ -76,7 +77,7 @@
     filter: brightness(2);
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 960px) {
     .highlight{
         justify-content: start;
     }

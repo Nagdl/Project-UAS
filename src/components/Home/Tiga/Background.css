@@ -20,7 +20,7 @@
     left: 0;
     bottom: 0;
     background-image: linear-gradient(
-        to , #000000 1%, transparent
+        to top, #000000 1%, transparent
     );
     
 }

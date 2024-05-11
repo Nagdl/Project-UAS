@@ -76,7 +76,7 @@ function IsiTiga() {
   }
 
   return (
-    <div className="containerIsiTiga">
+    <div className="containerIsiTiga" id="slideFoto">
       <div className="list">
         {Wisata.map((wisata, index) => (
           <div className={`item ${index === 0 ? 'active' : ''}`} key={index}>

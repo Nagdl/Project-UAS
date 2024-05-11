@@ -8,7 +8,7 @@ import "../src/App.css";
 
 function App() {
   return (
-    <div className="container-large">
+    <div className="container-large m-0 p-0">
       <div className="">
         <Navbar/>  
       </div>

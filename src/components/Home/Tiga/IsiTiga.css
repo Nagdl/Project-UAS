@@ -22,9 +22,8 @@
     right: 0;
     bottom: 0;
     background-image: linear-gradient(
-        to top, #000000 10%, transparent
+        to bottom, #000000 10%, transparent
     );
-    
 }
 
 .list .item.active{

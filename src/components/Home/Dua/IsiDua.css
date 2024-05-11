@@ -1,44 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.containerIsiDua{
-    width: 100%;
-    height: 50vh;
-    font-family: "Raleway", sans-serif;
+
+.isiDua{
+    font-family: "Montserrat", sans-serif;
+    background: rgb(0,0,0);
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(118,88,39,1) 71%);
+    backdrop-filter: blur(5px);
 }
 
 .Judul{
-    text-align: center;
-    width: 480px;
-    font-size: 35Px;
-    font-weight: bold;
+    width: fit-content;
+    font-size: 35px;
+    font-weight: 400;
     color: rgb(218, 191, 72);
-    margin: 30px auto;
     border-bottom: 3px solid;
+    margin: 0 auto;
 }
 
 /* CONTAINER UNTUK ISI DUA */
-.isiDua{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    justify-content: space-evenly;
+.isiContent{
+    display: flex;
+    gap: 10px;
+    object-fit: cover;
+    padding: 15px;
 }
 
 
 /* GALLERY FOTO */
 .containerFoto{
-    width: 500px;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
     padding: 10px;
-    justify-items: center;
 }
 
 .fotoItem{
     display: flex;
-    justify-content: center;
-    width: 150px;
-    height: 200px;
+    justify-content: stretch;
+
 }
 
 .fotoItem img{
@@ -46,4 +45,13 @@
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.text{
+    width: 50%;
+    padding: 30px;
+    font-weight: 600;
+    color: white;
+    object-fit: cover;
+    text-align: justify;
 }

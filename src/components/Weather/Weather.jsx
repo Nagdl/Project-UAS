@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./../Weather/Weather.css";
 
 const api = {
   key: "eabe563ec7be2658007fdd5ea3c843e6",
@@ -16,7 +17,7 @@ function Weather() {
         const result = await response.json();
         setWeather(result);
       } catch (error) {
-        console.error("Error fetching weather data:", error);
+        console.error("Error fetching weather data", error);
       }
     };
 
@@ -26,21 +27,25 @@ function Weather() {
 
   return (
     <div className="iniWeather">
-      <header>
         {typeof weather.main !== "undefined" ? (
           <div>
-            {/* Location */}
-            <p>{weather.name}</p>
-            {/* Temperature Celsius */}
-            <p>{weather.main.temp}°C</p>
-            {/* Condition (Sunny ) */}
-            <p>{weather.weather[0].main}</p>
-            <p>({weather.weather[0].description})</p>
+    
+            <div className="location">
+              <p>{weather.name}</p>
+            </div>
+          
+            <div className="condition">
+              <p>{weather.main.temp}°C</p>
+              <p>{weather.weather[0].main}</p>
+            </div>
+
+            <div className="description">
+              <p>({weather.weather[0].description})</p>
+            </div>
           </div>
         ) : (
           <p>Loading...</p>
         )}
-      </header>
     </div>
   );
 }

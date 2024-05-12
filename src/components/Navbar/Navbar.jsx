@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
 import logo from "../../assets/SigerLampung.png";
 import { Link } from "react-router-dom";
+import Weather from '../Weather/Weather';
 
 
 function Navbar(){
@@ -10,7 +11,7 @@ function Navbar(){
     useEffect(() => {
         const changeBackground = () => {
             console.log(window.scrollY)
-            if(window.scrollY >= 80){
+            if(window.scrollY >= 100){
                 setNavbar(true)
             } else {
                 setNavbar(false);
@@ -21,11 +22,13 @@ function Navbar(){
     }, []);
     
     return(
-        <nav className= {containerNavbar ? "containerNavbar aktif navbar navbar-expand-lg navbar-dark fixed-top" : "containerNavbar navbar navbar-expand-lg navbar-dark fixed-top"}>
+        <nav className= {containerNavbar ? "containerNavbar aktif navbar navbar-expand-lg navbar-dark fixed-top" : "containerNavbar navbar navbar-expand-lg navbar-dark fixed-top p-4"}>
             <div className="container-fluid">
                 {/* Logo */}
-                <a className="navbar-brand fs-4" href="#">Offcanvas dark navbar</a>
-
+                <div className="bungkusLogo">
+                    <div className="iconLogo"><img src={logo} alt=""/></div>
+                    <div className="teksLogo"><p>Lampungiana</p></div>
+                </div>
                 {/* Toggle Button */}
                 <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span className="navbar-toggler-icon"></span>
@@ -33,18 +36,28 @@ function Navbar(){
 
                 {/* SideBar */}
                 <div className="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    
                     {/* Sidebar Header */}
                     <div className="offcanvas-header text-white border-bottom">
-                        <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Dark offcanvas</h5>
+                        <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Lampungiana</h5>
                         <button type="button" className="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
 
                     {/* Sidebar Body */}
-                    <div className="sideBody tittleNav offcanvas-body d-flex flex-column p-4">
-                        <ul className="stroke navbar-nav justify-content-center align-item-center fs-5 flex-grow-1 pe-3">
+                    <div className="sideBody offcanvas-body d-flex flex-column p-4">
+                        <ul className="navbar-nav justify-content-center align-item-center fs-5 flex-grow-1 pe-3">
                             <li className="nav-item mx-2">
                                 <Link className="nav-link" to="/">Home</Link>
+                            </li>
+
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Main</a>
+
+                                <ul className="dropdown dropdown-menu dropdown-menu-dark">
+                                    <li><a className="dropdown-item" href="#mainSatu">Lampung Motto</a></li>
+                                    <li><a className="dropdown-item" href="#">Highlight Destination</a></li>
+                                    <li><a className="dropdown-item" href="#">Pesona Lampung</a></li>
+                                    <li><a className="dropdown-item" href="#"></a></li>
+                                </ul>
                             </li>
 
                             <li className="nav-item mx-2">
@@ -53,29 +66,11 @@ function Navbar(){
                             <li className="nav-item mx-2">
                                 <Link className="nav-link" to="/ContactUs">Contact Us</Link>
                             </li>
-
-                            <li className="nav-item mx-2">
-                                <a className="nav-link" href="#mainSatu">Main</a>
-                            </li>
-
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Service
-                                </a>
-
-                                <ul className="dropdown dropdown-menu dropdown-menu-dark">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr className="garis dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-
-                            {/* JAM/CALENDAR */}
-
                         </ul>
                     </div>
                 </div>
+
+                <Weather/>
             </div>
         </nav>
     );

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@media(max-width: 991px){
+@media(max-width: 900px){
     /* SIDE BAR*/
     .sidebar{
         background-color: rgba(255, 255, 255, 0.15);
@@ -20,48 +20,75 @@
     }
 }
 
+/* BUNGKUS ISI CONTAINER */
+.bungkusBesar{
+
+}
+
+/* LOGO */
+.bungkusLogo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.bungkusLogo {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.teksLogo{
+    color: white;
+    font-weight: 500;
+    object-fit: cover;
+    text-align: center;
+}
+
 .containerNavbar{
     font-family: "Montserrat", sans-serif;
     background: transparent;
-    transition: all .7s;
+    color: white;
 }
 
-.aktif{
-    background: linear-gradient(346deg, rgba(0,0,0,1) 0%, rgba(118,88,39,1) 52%, rgba(255,211,29,1) 100%);
-}
-
-.aktif,
-.aktif:after,
-.aktif:before {
-    transition: all .7s;
-}
-
+/* Navbar dan Sidebody */
 .sideBody ul li a{
     color: white;
     font-weight: 600;
     font-size: 18px;
 }
 
+.sideBody ul li a,
+.sideBody ul li a:after,
+.sideBody ul li a:before {
+    transition: all .7s;
+}
+    
+.sideBody a:hover {
+    color: brown;
+    background-color: transparent;
+    font-weight: 800;
+}
+
+
+/* Dropdown */
+.dropdown ul{
+    border: none;
+    box-shadow: none;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
 .dropdown ul li a{
+    color: white;
     font-size: 14px;
     font-weight: 400;
 }
 
-.tittleNav ul li a{
-    color: white;
-    font-weight: 600;
-    font-size: 18px;
-    background: transparent;
-    text-decoration: none;
-    padding: 13px;
-}
-    
-.tittleNav ul li a,
-.tittleNav ul li a:after,
-.tittleNav ul li a:before {
-    transition: all .7s;
-}
-    
-.tittleNav a:hover {
-    font-weight: 800;
+/* Transisi on scroll */
+.aktif{
+    transition: all 1.3s;
+    background: linear-gradient(346deg, rgba(0,0,0,1) 0%, rgba(118,88,39,1) 52%, rgba(255,211,29,1) 100%);
 }

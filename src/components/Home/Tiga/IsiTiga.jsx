@@ -83,19 +83,20 @@ function IsiTiga() {
 
   return (
     <div className="container-large containerIsiTiga">
-      <div className="overlay2"></div>
       
+      <div className="overlay2"></div>
+
       <div className="list">
         {Wisata.map((wisata, index) => (
-          <div className={`item ${index === 1 ? 'active' : ''}`} key={index}>
-            <Back
-              name={wisata.name}
-              image={wisata.imgURL}
-              desk={wisata.deskripsi}                
-            />
-          </div>
-        ))}
-      </div>
+            <div className={`item ${index === 1 ? 'active' : ''}`} key={index}>
+              <Back
+                name={wisata.name}
+                image={wisata.imgURL}
+                desk={wisata.deskripsi}                
+              />
+            </div>
+          ))}
+        </div>
 
       <div className="arrows">
         <button id="prev">

@@ -1,0 +1,13 @@
+.iniWeather{
+    text-align: center;
+    font-weight: 500;
+}
+
+.location{
+
+}
+
+.condition{
+    display: flex;
+    justify-content: space-between;
+}

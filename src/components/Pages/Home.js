@@ -10,6 +10,7 @@ function Home() {
         <Navbar/>  
         <IsiSatu />
         <IsiDua />
+        <IsiTiga />
     </div>
     );
 }

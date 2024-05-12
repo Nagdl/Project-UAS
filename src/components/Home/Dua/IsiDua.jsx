@@ -23,7 +23,8 @@ function IsiDua() {
                     <div className="fotoItem wide"><img src={LampungDesc} alt=""/></div>
                     <div className="fotoItem"><img src={LampungDesc} alt=""/></div>
                 </div>
-                <div className="overlayDua"></div>
+                <div className="overlayIsiDua"></div>
+                <div className="overlayIsiDuaKeDua"></div>
             </div>
         </div>
     );

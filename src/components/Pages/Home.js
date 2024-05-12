@@ -7,7 +7,7 @@ import React from 'react';
 function Home() {
     return (
     <div className="container-large">
-        <Navbar/>  
+        {/* <Navbar/>   */}
         <IsiSatu />
         <IsiDua />
         <IsiTiga />

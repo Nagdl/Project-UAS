@@ -82,10 +82,12 @@ function IsiTiga() {
   }
 
   return (
-    <div className="containerIsiTiga">
+    <div className="container-large containerIsiTiga">
+      <div className="overlay2"></div>
+      
       <div className="list">
         {Wisata.map((wisata, index) => (
-          <div className={`item ${index === 0 ? 'active' : ''}`} key={index}>
+          <div className={`item ${index === 1 ? 'active' : ''}`} key={index}>
             <Back
               name={wisata.name}
               image={wisata.imgURL}

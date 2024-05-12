@@ -1,4 +1,5 @@
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../Navbar/Navbar";
+import Weather from "../Weather/Weather";
 
 function About(){
     return (
@@ -7,7 +8,7 @@ function About(){
               <Navbar/>  
             </div>
             <div>
-              <h1>About Us</h1>
+              <Weather />
             </div>
         </div>
         );

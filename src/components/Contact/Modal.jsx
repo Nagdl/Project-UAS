@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Modal.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function Modal() {
     useEffect(() => {
@@ -30,7 +30,7 @@ function Modal() {
 
                     {/* Button Modal */}
                     <button id="ButtonModal" type="button" className="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        Button
+                        <FontAwesomeIcon icon={faEnvelope} /> Contact Us
                     </button>
                 </div>
                 <div className="iniModal">

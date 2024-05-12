@@ -9,6 +9,14 @@
     .penjelasanMotto{
         text-align: center;
     }
+
+    .lampungTreasure{
+        text-align: center;
+    }
+
+    .penjelasanTreasure{
+        text-align: center;
+    }
 }
 .isiDua{
     margin: 0;
@@ -66,7 +74,14 @@
     height: auto;
     vertical-align: middle;
     display: inline-block;
-    filter: grayscale(100%);
+    filter: grayscale(80%);
+}
+
+
+.welcomeLampung{
+    color: white;
+    font-size: 50px;
+    z-index: 10;
 }
 
 
@@ -77,8 +92,7 @@
     font-weight: 600;
     color: white;
     object-fit: cover; 
-    margin-bottom: 70px;
-    transform: translate(5%, 250%);
+    transform: translate(5%, 300%);
     position: relative;
     z-index: 10;
     background: linear-gradient( to right, rgb(0, 0, 0) 70%, transparent);

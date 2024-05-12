@@ -69,7 +69,6 @@ function Navbar(){
                         </ul>
                     </div>
                 </div>
-
                 <Weather/>
             </div>
         </nav>

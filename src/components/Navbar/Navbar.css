@@ -15,7 +15,7 @@
     }
 
     .dropdown ul li a{
-        font-size: 10px;
+        font-size: 16px;
         font-weight: 400;
     }
 }
@@ -52,10 +52,14 @@
 }
 
 /* Navbar dan Sidebody */
+
+.sideBody ul li{
+    font-weight: 600;
+    font-size: 24px;
+}
+
 .sideBody ul li a{
     color: white;
-    font-weight: 600;
-    font-size: 18px;
 }
 
 .sideBody ul li a,
@@ -89,6 +93,12 @@
 
 /* Transisi on scroll */
 .aktif{
+    font-size: 100%;
     transition: all 1.3s;
     background: linear-gradient(346deg, rgba(0,0,0,1) 0%, rgba(118,88,39,1) 52%, rgba(255,211,29,1) 100%);
+}
+
+.aktif .sideBody ul li a{
+    font-weight: 600;
+    font-size: 18px;
 }

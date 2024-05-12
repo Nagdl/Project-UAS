@@ -21,6 +21,7 @@ function IsiDua() {
                     <div className="fotoItem tall"><img src={LampungDesc} alt=""/></div>
                     <div className="fotoItem"><img src={LampungDesc} alt=""/></div>
                 </div>
+                <div className="overlayDua"></div>
             </div>
         </div>
     );

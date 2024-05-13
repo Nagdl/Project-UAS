@@ -7,14 +7,17 @@ import Weather from '../Weather/Weather';
 
 function Navbar(){
     const [containerNavbar, setNavbar] = useState(false); 
+    const [ bungkusLogo , setLogo ] = useState(false);
 
     useEffect(() => {
         const changeBackground = () => {
             console.log(window.scrollY)
             if(window.scrollY >= 100){
-                setNavbar(true)
+                setNavbar(true);
+                setLogo(true)
             } else {
                 setNavbar(false);
+                setLogo(false);
             } 
         };
 
@@ -25,9 +28,9 @@ function Navbar(){
         <nav className= {containerNavbar ? "containerNavbar aktif navbar navbar-expand-lg navbar-dark fixed-top" : "containerNavbar navbar navbar-expand-lg navbar-dark fixed-top p-4"}>
             <div className="container-fluid">
                 {/* Logo */}
-                <div className="bungkusLogo">
+                <div className={bungkusLogo ? "bungkusLogo" : "bungkusLogo"}>
                     <div className="iconLogo"><img src={logo} alt=""/></div>
-                    <div className="teksLogo"><p>Lampungiana</p></div>
+                    <div className="teksLogo"><p>LAMPCARA</p></div>
                 </div>
                 {/* Toggle Button */}
                 <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -44,7 +47,7 @@ function Navbar(){
 
                     {/* Sidebar Body */}
                     <div className="sideBody offcanvas-body d-flex flex-column p-4">
-                        <ul className="navbar-nav justify-content-center align-item-center fs-5 flex-grow-1 pe-3">
+                        <ul className="containSide navbar-nav justify-content-center align-item-center fs-5 flex-grow-1">
                             <li className="nav-item mx-2">
                                 <Link className="nav-link" to="/">Home</Link>
                             </li>
@@ -54,9 +57,9 @@ function Navbar(){
 
                                 <ul className="dropdown dropdown-menu dropdown-menu-dark">
                                     <li><a className="dropdown-item" href="#mainSatu">Lampung Motto</a></li>
-                                    <li><a className="dropdown-item" href="#">Highlight Destination</a></li>
+                                    <li><a className="dropdown-item" href="#mainTiga">Highlight Destination</a></li>
                                     <li><a className="dropdown-item" href="#">Pesona Lampung</a></li>
-                                    <li><a className="dropdown-item" href="#"></a></li>
+                                    <li><a className="dropdown-item" href="#">BUTUH PERTOLONGAN</a></li>
                                 </ul>
                             </li>
 
@@ -69,7 +72,7 @@ function Navbar(){
                         </ul>
                     </div>
                 </div>
-                <Weather/>
+                
             </div>
         </nav>
     );

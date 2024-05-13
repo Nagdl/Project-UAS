@@ -48,6 +48,7 @@
     border-radius: 10px;
     color: white;
     font-weight: bold;
+    
 }
 
 .iniButton button{
@@ -66,6 +67,9 @@
 .iniButton button:hover{
     color: black;
     background-color: brown;
+    -webkit-box-shadow:0px 0px 105px 45px rgba(241,255,46,0.55);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(241,255,46,0.55);
+    box-shadow: 0px 0px 105px 45px rgba(241,255,46,0.55);
 }
 
 .iniButton button,

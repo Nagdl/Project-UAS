@@ -51,9 +51,10 @@
 .containerFoto {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    grid-template-columns: 400px 1fr 2fr;
     grid-auto-rows: 200px;
     grid-auto-flow: dense;
+    transform: translate(0, -35%);
 }
 
 .containerFoto .wide{
@@ -70,34 +71,68 @@
 }
 
 .fotoItem img{
+    margin: 0;
+    padding: 0;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     display: inline-block;
-    filter: grayscale(80%);
+    filter: grayscale(90%);
 }
 
-
-.welcomeLampung{
-    color: white;
-    font-size: 50px;
+.judulIsiDua {
     z-index: 10;
+    letter-spacing: 15px;
+    text-align: center;
+    font-size: 1600%;
+    font-weight: 900;
+    background: linear-gradient(to bottom, yellow 10%, transparent 85%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: translate(0%, 30%);
 }
 
 
 /* MOTTO LAMPUNG */
 
 .mottoLampung{
-    width: 83%;
-    font-weight: 600;
+    width: 85%;
+    border-radius: 10px;
+    font-weight: 700;
     color: white;
     object-fit: cover; 
-    transform: translate(5%, 300%);
+    transform: translate(3%, 130%);
     position: relative;
     z-index: 10;
-    background: linear-gradient( to right, rgb(0, 0, 0) 70%, transparent);
+    background: linear-gradient( to right, rgb(0, 0, 0) 50%, transparent);
+    padding: 40px;
 }
 
+.petikDua{
+    font-style: italic;
+}
+
+.penjelasanMotto{
+    font-weight: 400;
+}
+
+
+/* MOTTO  */
+
+.treasure{
+    width: 85%;
+    font-weight: 700;
+    border-radius: 10px;
+    color: white;
+    object-fit: cover; 
+    transform: translate(15%, 150%);
+    position: relative;
+    z-index: 10;
+    background: linear-gradient( to left, rgb(0, 0, 0) 50%, transparent);
+    text-align: end;
+    padding: 30px;
+}
 .petikDua{
     font-style: italic;
 }
@@ -113,7 +148,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, #000000 2%, transparent, #000000 99%);
+    background-image: linear-gradient(to top, #000000 20%, transparent, #000000 80%);
     z-index: 5;
 }
 
@@ -124,5 +159,5 @@
     width: 100%;
     height: 100%;
     background: black;
-    opacity: 0.5;
+    opacity: 0.4;
 }

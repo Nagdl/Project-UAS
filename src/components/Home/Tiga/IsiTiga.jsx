@@ -66,6 +66,8 @@ function IsiTiga() {
     showSlider();
   }, [itemActive]);
 
+
+// HIGHLIGHT BESAR 
   function showSlider(){
     const items = document.querySelectorAll('.list .item');
     const highlights = document.querySelectorAll('.highlight .item');
@@ -83,10 +85,7 @@ function IsiTiga() {
 
   return (
     <div className="container-large containerIsiTiga">
-      
       <div className="overlay2"></div>
-
-
       <div className="highlight">
         {Wisata.map((wisata, index) => (
           <div className={`item ${index === 0 ? 'active' : ''}`} key={index}>

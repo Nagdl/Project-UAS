@@ -9,7 +9,7 @@ function Background(props) {
             <div className="isi">
                 <h1>{props.name}</h1>
                 <button  type="button" className="btn" id="buttonList">
-                    Explore more..
+                    Explore more
                 </button>
             </div>
         </>

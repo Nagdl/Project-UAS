@@ -23,6 +23,7 @@ const YouTubePlayer = ({ apiKey, videoId }) => {
     <div>
       {videoData ? (
         <div>
+          <p>{videoData.items[0].snippet.description}</p>
           <iframe
             title="YouTube Video Player"
             width="600"

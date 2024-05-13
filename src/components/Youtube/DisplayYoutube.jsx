@@ -3,7 +3,7 @@ import YouTubePlayer from './iniYoutube';
 
 const DYoutube = () => {
   const apiKey = 'AIzaSyC7cJKkm6JcVV0Dpx2RjZaqYh5Ch-UjQ7g';
-  const videoId = 'AJOru0wzKP8';
+  const videoId = 'EiNJc4KKwXg';
 
   return (
     <div>

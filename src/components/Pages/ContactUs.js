@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Modal from "../../components/Contact/Modal";
+import Footer from "../../components/Footer/Footer";
 
 function ContactUs(){
     return (
@@ -10,6 +11,7 @@ function ContactUs(){
             <div className="IsiContact">
               <div className="IniModal">
                 <Modal />
+                <Footer />
               </div>
             </div>
         </div>

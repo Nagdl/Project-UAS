@@ -3,6 +3,9 @@ import Lanakila from "../assets/LanakilaLake.webp";
 import Lembah from "../assets/LembahBatu.jpeg";
 import Pisang from "../assets/PulauPisang.jpg";
 import Temiangan from "../assets/Temiangan hill.jpg";
+import Minang from "../assets/minangrua.jpg";
+import Teca from "../assets/tebing cepa.jpg"
+import Pahawang from "../assets/pantai pahawang.jpg"
 
 const Wisata = [
     {
@@ -44,7 +47,32 @@ const Wisata = [
         lng: "104.43995",
         lat: "-5.12235",
         deskripsi: "Temiangan Hill adalah sebuah perbukitan yang mempesona, terletak di tengah-tengah keindahan alam Borneo. Dikelilingi oleh hutan hujan yang lebat dan sungai-sungai yang mengalir dengan gemericik air, Temiangan Hill menawarkan pemandangan yang menakjubkan serta kesempatan untuk menjelajahi keanekaragaman hayati yang kaya di sekitarnya. Dengan udara segar yang menyejukkan dan suasana yang tenang, tempat ini merupakan destinasi ideal bagi para petualang yang mencari ketenangan dan keindahan alam yang belum tersentuh."
-    }
+    },
+    {
+        id: 6,
+        name: "Minang Rua",
+        imgURL: Minang,
+        lng: "105.71481",
+        lat: "-5.85670",
+        deskripsi: "Pantai Minang Rua di Lampung adalah destinasi yang menawarkan pemandangan yang memukau dengan hamparan pasir putih yang lembut dan air laut yang jernih berwarna biru kehijauan. Pengunjung dapat merasakan ketenangan saat berjalan di tepi pantai, menikmati semilir angin laut yang sejuk, atau bersantai di bawah rindangnya pohon kelapa yang tersebar di sepanjang pantai. Selain itu, Pantai Minangrua juga menjadi tempat yang sempurna untuk berbagai aktivitas luar ruang seperti berenang, snorkeling, atau sekedar menikmati panorama sunset yang mempesona. Keindahan alami dan suasana yang masih asri membuat pantai ini menjadi salah satu destinasi favorit bagi para pencinta alam dan mereka yang mencari kedamaian jauh dari hiruk pikuk kehidupan kota."
+    },
+    {
+        id: 7,
+        name: "Way Tembing Cepa",
+        imgURL: Teca,
+        lng: "105.65646",
+        lat: "-5.74503",
+        deskripsi: "Way Tebing Cepa di Lampung adalah sebuah destinasi wisata alam yang menawarkan keunikan berupa tebing-tebing batu dengan sungai yang jernih mengalir di antaranya. Lokasi ini menarik bagi para petualang dan pecinta alam, menawarkan pemandangan yang dramatis dan kesempatan untuk melakukan kegiatan luar ruangan seperti arung jeram dan trekking di sepanjang jalur yang memadukan tantangan dan keindahan alam. Air sungai Way Tebing Cepa yang dingin dan segar sangat cocok untuk menyegarkan diri setelah beraktivitas, sementara suara alam yang tenang memberikan suasana relaksasi yang mendalam."
+    },
+    {
+        id: 8,
+        name: "Pantai Pahawang",
+        imgURL: Pahawang,
+        lng: "105.22216",
+        lat: "-5.67481",
+        deskripsi: "Pantai Pahawang di Lampung adalah surga tersembunyi yang menakjubkan bagi para pencinta alam dan penggemar aktivitas air. Terletak di ujung selatan Pulau Sumatra, pantai ini menawarkan keindahan alam yang memukau, dengan air laut yang jernih, pasir putih yang lembut, dan hamparan terumbu karang yang berwarna-warni. Pemandangan bawah lautnya begitu memesona dengan keberagaman hayati yang luar biasa, membuatnya menjadi destinasi snorkeling dan diving yang populer."
+    },
+
 ];
 
 export default Wisata;

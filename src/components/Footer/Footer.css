@@ -1,6 +1,6 @@
 .footer-container {
     width: 100%;
-    background-color: #1e293b;
+    background-color: #000000;
     color: #d1d5db;
     padding: 1rem 0.5rem;
 }
@@ -9,8 +9,8 @@
     max-width: 1240px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15rem;
     padding: 2rem 0;
 }
 
@@ -91,3 +91,22 @@ ul{
     margin: 0;
     padding: 0;
 }
+
+.kiri p{
+    margin-top: 10px;
+    
+}
+
+.kanan{
+    margin-top: 10%;
+}
+
+.kanan p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.kanan Link{
+    text-decoration: none;
+    color: #3F72AF;
+}
+

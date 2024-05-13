@@ -64,6 +64,9 @@ function Navbar(){
                             </li>
 
                             <li className="nav-item mx-2">
+                                <Link className="nav-link" to="/Wisata">Wisata</Link>
+                            </li>
+                            <li className="nav-item mx-2">
                                 <Link className="nav-link" to="/About">About Us</Link>
                             </li>
                             <li className="nav-item mx-2">

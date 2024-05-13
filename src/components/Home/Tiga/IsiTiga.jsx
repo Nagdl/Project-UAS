@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Tiga/IsiTiga.css";
-import Wisata from "../Tiga/Wisata";
+import Wisata from "../../Wisata";
 import Card from "../Tiga/Card";
 import Back from "../Tiga/Background";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

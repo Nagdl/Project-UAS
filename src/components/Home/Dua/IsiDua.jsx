@@ -2,6 +2,7 @@ import React from "react";
 import "./IsiDua.css";
 import LampungDesc from "../../../assets/LampungDesc.jpg"
 import Pisang from "../../../assets/PulauPisang.jpg";
+import peta from "./../../../assets/mapIndonesia.png";
 
 function IsiDua() {
     return(
@@ -23,7 +24,7 @@ function IsiDua() {
                 </div>
 
             <div className="isiContent">
-                <div className="containerFoto">
+                <div className="container-large containerFoto">
                     <div className="fotoItem tall"><img src={LampungDesc} alt=""/></div>
                     <div className="fotoItem big"><img src={Pisang} alt=""/></div>
                     <div className="fotoItem wide"><img src={LampungDesc} alt=""/></div>

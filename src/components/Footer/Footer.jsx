@@ -4,15 +4,15 @@ import './Footer.css';
 
 const section = [
     {
-        title: 'Solution',
-        items: ['Marketing', 'Analytics', 'Commerce', 'Data', 'Cloud'],
+        title: 'Home',
+        items: [],
     },
     {
-        title: 'Solution',
-        items: ['Marketing', 'Analytics', 'Commerce', 'Data', 'Cloud'],
+        title: 'Main',
+        items: ['Motto Lampung', 'Higlight Destination'],
     },
     {
-        title: 'Solution',
+        title: 'Wisata',
         items: ['Marketing', 'Analytics', 'Commerce', 'Data', 'Cloud'],
     },
     {
@@ -55,7 +55,7 @@ const Footer = () => (
         <div className="footer-container">
             <div className="footer-grid">
                 {section.map((section, index) => (
-                    <div key={index}>
+                    <div key={index} className="">
                         <h6 className="footer-title">
                             {section.title}
                         </h6>

@@ -86,13 +86,24 @@ function IsiTiga() {
       
       <div className="overlay2"></div>
 
+
+      <div className="highlight">
+        {Wisata.map((wisata, index) => (
+          <div className={`item ${index === 0 ? 'active' : ''}`} key={index}>
+            <Card 
+              name={wisata.name}
+              image={wisata.imgURL}
+            />
+          </div>
+        ))}
+      </div>
+
       <div className="list">
         {Wisata.map((wisata, index) => (
             <div className={`item ${index === 1 ? 'active' : ''}`} key={index}>
               <Back
                 name={wisata.name}
-                image={wisata.imgURL}
-                desk={wisata.deskripsi}                
+                image={wisata.imgURL}           
               />
             </div>
           ))}
@@ -107,16 +118,6 @@ function IsiTiga() {
         </button>
       </div>
       
-      <div className="highlight">
-        {Wisata.map((wisata, index) => (
-          <div className={`item ${index === 0 ? 'active' : ''}`} key={index}>
-            <Card 
-              name={wisata.name}
-              image={wisata.imgURL}
-            />
-          </div>
-        ))}
-      </div>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.Judul{
+    width: fit-content;    
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(218, 191, 72);
+    border-bottom: 3px solid;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+.ContainerJudul{
+    background: black;
+    width: 100%;
+}

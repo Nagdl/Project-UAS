@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .isi {
-    color: white;
+    width: 100%;
     position: absolute;
-    left: 10%;
-    top: 20%;
+    top: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.isi p{
-    animation-duration: 1.3s;
+.OverlayList{
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
 }
 
 .isi h1{
-    font-size: 100px;
-    margin: 0;
+    width: 100%;
+    color: rgb(196, 193, 193);
+    text-align: center;
+    font-size: 200px;
     animation-delay: 1s;
+    z-index: 100;
+    font-weight: 700;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -29,4 +39,36 @@
     transform: translateY(30px);
     opacity: 0;
     animation: animasi .5s .7s ease-in-out 1 forwards;
+}
+
+
+#buttonList {
+    padding: 17px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(196, 193, 193);;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    width: fit-content;
+    margin: 0 auto;
+}
+  
+#buttonList:hover {
+    letter-spacing: 3px;
+    background-color: #000000;  
+    color: white;
+    box-shadow: #000000 0px 7px 29px 0px;
+}
+  
+#buttonList:active {
+    letter-spacing: 3px;
+    background-color: #000000;
+    color: white;
+    box-shadow: #000000 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 100ms;
+    border: #000000;
 }

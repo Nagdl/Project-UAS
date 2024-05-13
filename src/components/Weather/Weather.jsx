@@ -26,7 +26,7 @@ function Weather() {
   }, []); // Gunakan array kosong agar efek ini hanya terpanggil sekali saat komponen dimuat
 
   return (
-    <div className="iniWeather">
+    <div className="containerWeather">
         {typeof weather.main !== "undefined" ? (
           <div>
     

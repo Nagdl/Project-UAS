@@ -24,7 +24,7 @@ function IsiDua() {
                 </div>
 
             <div className="isiContent">
-                <div className="container-large containerFoto">
+                <div className="containerFoto">
                     <div className="fotoItem tall"><img src={LampungDesc} alt=""/></div>
                     <div className="fotoItem big"><img src={Pisang} alt=""/></div>
                     <div className="fotoItem wide"><img src={LampungDesc} alt=""/></div>

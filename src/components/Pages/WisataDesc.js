@@ -1,8 +1,10 @@
-import PageMaps from "../Maps/PageMaps"
+import JudulMaps from "../Maps/JudulMaps";
+import PageMaps from "../Maps/PageMaps";
 
 function WisataDesc(){
     return (
-        <div className="container-large">
+        <div className="container-fluid">
+            <JudulMaps />
             <PageMaps />
         </div>
     );

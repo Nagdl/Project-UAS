@@ -58,8 +58,6 @@ function Navbar(){
                                 <ul className="dropdown dropdown-menu dropdown-menu-dark">
                                     <li><a className="dropdown-item" href="#mainSatu">Lampung Motto</a></li>
                                     <li><a className="dropdown-item" href="#mainTiga">Highlight Destination</a></li>
-                                    <li><a className="dropdown-item" href="#">Pesona Lampung</a></li>
-                                    <li><a className="dropdown-item" href="#">BUTUH PERTOLONGAN</a></li>
                                 </ul>
                             </li>
 

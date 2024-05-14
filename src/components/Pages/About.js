@@ -1,18 +1,19 @@
 import Navbar from "../../components/Navbar/Navbar";
 import About from "../AboutUs/AboutUs"
-import DYoutube from "../Youtube/DisplayYoutube";
+import Footer from "../Footer/Footer";
 
 function AboutUs(){
     return (
         <div className="container-large">
-            {/* <div className="Nav">
-              <Navbar/>  
-            </div> */}
+          <div className="NavAbout">
+            <Navbar/> 
+          </div> 
             <div className="IsiContact">
               <div className="IniAboutUs">
-                <DYoutube />
+                <About />
               </div>
             </div>
+            <Footer/>
         </div>
         );
 }

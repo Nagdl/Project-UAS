@@ -1,5 +1,6 @@
 import React from "react";
 import "./Background.css";
+import { Link } from "react-router-dom";
 
 function Background(props) {
     return (
@@ -8,9 +9,9 @@ function Background(props) {
             <img src={props.image} alt="imgBc"/>
             <div className="isi">
                 <h1>{props.name}</h1>
-                <button  type="button" className="btn" id="buttonList">
+                <Link to="/Wisata" className="btn" id="buttonList">
                     Explore more
-                </button>
+                </Link>
             </div>
         </>
     );

@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.wrapper{
+  background: linear-gradient(346deg, rgba(0,0,0,1) 28%, rgba(118,88,39,1) 52%, rgba(255,211,29,1) 100%);
+  padding-top: 100px;
+  height: 100vh;
+  color: white;
+}
+
+.IniAbout{
+  margin-top: 100px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -104,14 +115,15 @@
 
 .know-more-button {
   margin-bottom: 5px;
-  background-color: blue;
+  background-color: black;
   border-radius: 9px;
+  color: rgb(189, 181, 181);
   width: calc(100% - 32px);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .know-more-button:hover, .know-more-button:focus {
-  background-color: dark blue;
+  background-color: rgba(118,88,39,1);
   cursor: pointer;
   transform: scale(1.1); 
 }
@@ -123,10 +135,7 @@
 
 .modalAbout {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0 0 0 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;

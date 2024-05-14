@@ -1,24 +1,28 @@
-import React from "react";
-import "./../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import React, { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../src/App.css";
-import { Route, Routes } from "react-router-dom"
-import Home from "../src/components/Pages/Home"
-import About from "../src/components/Pages/About"
-import Contact from "../src/components/Pages/ContactUs"
+import Home from "../src/components/Pages/Home";
+import About from "../src/components/Pages/About";
+import Contact from "../src/components/Pages/ContactUs";
 import WisataDesc from "./components/Pages/WisataDesc";
 
-
 function App() {
-  return (
-      <div className="container-large">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Wisata" element={<WisataDesc />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/ContactUs" element={<Contact />} />
-        </Routes>
-      </div>
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return (
+    <div className="container-large">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Wisata" element={<WisataDesc />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/ContactUs" element={<Contact />} />
+      </Routes>
+    </div>
   );
 }
 

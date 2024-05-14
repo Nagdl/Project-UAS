@@ -66,39 +66,44 @@ function About() {
 
   return (
     <div className="wrapper">
-      <h1 className="title">About Our Team</h1>
-      <div className="main-container">
-        <div className="app-container">
-          <Slider {...settings}>
-            {data.map((member) => (
-              <div key={member.name} className="card" style={{ backgroundImage: `url(${member.img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                <div className="card-top">
-                  <img src={member.img} alt={member.name} className="card-image" />
+      <div className='IniAbout'>
+        <h1 className="title">About Our Team</h1>
+        <div className="main-container">
+          <div className="app-container">
+            <Slider {...settings}>
+              {data.map((member) => (
+                <div key={member.name} className="card" style={{ backgroundImage: `url(${member.img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                  <div className="card-top">
+                    <img src={member.img} alt={member.name} className="card-image" />
+                  </div>
+                  <div className="card-body">
+                    <p className="card-title">{member.name}</p>
+                    <p>{member.review}</p>
+                    <button onClick={() => handleKnowMore(member)} className="know-more-button">
+                      Know More
+                    </button>
+                  </div>
                 </div>
-                <div className="card-body">
-                  <p className="card-title">{member.name}</p>
-                  <p>{member.review}</p>
-                  <button onClick={() => handleKnowMore(member)} className="know-more-button">
-                    Know More
-                  </button>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-      
-      {modalOpen && (
-        <div className="modalAbout">
-          <div className={`modal-contentAbout ${isExpanded ? 'expanded' : ''}`}>
-          <h2 className="modal-nameAbout">{selectedMember.name}</h2>
-            <a href={selectedMember.instagramUrl} target="_blank" rel="noopener noreferrer">
-              <img src={igIcon} alt="Instagram" className="instagram-icon" />
-            </a>
-            <button onClick={closeModal} className="modal-close-buttonAbout">Close</button>
+              ))}
+            </Slider>
+          </div>
+          <div className="paragraph-container">
+          <p>Kami merupakan Kelompok 8 yang merupakan kelompok yang sedang melakukan project Ujian Akhir Semester (UAS) mata kuliah Intro to Internet Technology. Kelompok kami yang berisikan Kelvin Jonathan Setiawan yang merupakan Leader project kami dengan para pengikutnya Gadiel Narain, Gregorius Frederico, dan Kent Seanly Teguh. Para pengikut beserta Leadernya akan senantiasa mengerjakan Project yang kami</p>
           </div>
         </div>
-      )}
+        
+        {modalOpen && (
+          <div className="modalAbout">
+            <div className={`modal-contentAbout ${isExpanded ? 'expanded' : ''}`}>
+            <h2 className="modal-nameAbout">{selectedMember.name}</h2>
+              <a href={selectedMember.instagramUrl} target="_blank" rel="noopener noreferrer">
+                <img src={igIcon} alt="Instagram" className="instagram-icon" />
+              </a>
+              <button onClick={closeModal} className="modal-close-buttonAbout">Close</button>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

@@ -1,14 +1,18 @@
 /* BUNGKUS CONTENT */
 
 .bungkusContent{
-    
+    color: white;
+}
+
+.Top h1{
+    text-align: center;
+    font-weight: 600;
 }
 
 .iniGambar{
     position: relative;
     width: 40%;
     height: calc(50vh - 77px);
-    
 }
 
 .iniGambar img{

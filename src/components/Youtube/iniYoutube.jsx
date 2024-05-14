@@ -21,18 +21,18 @@ const YouTubePlayer = ({ apiKey, videoId }) => {
   }, [apiKey, videoId]);
 
   return (
-    <div>
+    <div className='containerYoutube'>
       {videoData ? (
         <div className='kontenVideo'>
-          <p>{videoData.items[0].snippet.description}</p>
-          <iframe
-            title="YouTube Video Player"
-            width="600"
-            height="400"
-            src={`https://www.youtube.com/embed/${videoId}`}
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <p className='teksVideo'>{videoData.items[0].snippet.description}</p>
+            <iframe className='video'
+              title="YouTube Video Player"
+              width="600"
+              height="400"
+              src={`https://www.youtube.com/embed/${videoId}`}
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
         </div>
       ) : (
         <p>Loading...</p>

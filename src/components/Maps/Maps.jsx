@@ -28,7 +28,7 @@ function Map(props2) {
   }, [lampung.lng, lampung.lat, zoom]);
 
   return (
-    <div className="BungkusContent">     
+    <div className="bungkusContent">     
       <div className="Top">
         <h1>{props2.title}</h1>
       </div>

@@ -7,7 +7,7 @@ const DYoutube = () => {
   const videoId = 'EiNJc4KKwXg';
 
   return (
-    <div className="containerVideo">
+    <div className="container containerVideo">
       <YouTubePlayer apiKey={apiKey} videoId={videoId} />
     </div>
   );

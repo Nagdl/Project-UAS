@@ -5,6 +5,7 @@ import IsiTiga from "../../components/Home/Tiga/IsiTiga";
 import Footer from "../../components/Footer/Footer";
 import Judul from "../Home/Tiga/JudulTiga";
 import React from 'react';
+import Weather from "../Weather/Weather";
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
         <IsiDua />
         <Judul />
         <IsiTiga />
+        <Weather />
         <Footer />
     </div>
     );

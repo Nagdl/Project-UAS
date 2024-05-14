@@ -86,10 +86,8 @@ function About() {
             ))}
           </Slider>
         </div>
-        <div className="paragraph-container">
-          <p>gua gatau mau isi apa ini.</p>
-        </div>
       </div>
+      
       {modalOpen && (
         <div className="modalAbout">
           <div className={`modal-contentAbout ${isExpanded ? 'expanded' : ''}`}>

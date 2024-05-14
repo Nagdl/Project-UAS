@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import "./../Youtube/iniYoutube.css";
 
 const YouTubePlayer = ({ apiKey, videoId }) => {
   const [videoData, setVideoData] = useState(null);
@@ -22,7 +23,7 @@ const YouTubePlayer = ({ apiKey, videoId }) => {
   return (
     <div>
       {videoData ? (
-        <div>
+        <div className='kontenVideo'>
           <p>{videoData.items[0].snippet.description}</p>
           <iframe
             title="YouTube Video Player"
@@ -38,6 +39,6 @@ const YouTubePlayer = ({ apiKey, videoId }) => {
       )}
     </div>
   );
-};
+}
 
 export default YouTubePlayer;

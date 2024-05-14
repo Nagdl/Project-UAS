@@ -3,9 +3,9 @@ import "./../Maps/JudulMaps.css";
 
 function JudulMaps() {
   return (
-    <div className="containerJudul">
-        <div className="judulDestinasi text-wrap">
-            <p>Destination</p>
+    <div className="containerJudul" id="wisata">
+        <div className="judulDestinasi">
+            <p>Wisata</p>
         </div>
     </div>
   );

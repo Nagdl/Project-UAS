@@ -29,7 +29,6 @@ function Map(props2) {
 
   return (
     <div className="BungkusContent">     
-      
       <div className="Top">
         <h1>{props2.title}</h1>
       </div>

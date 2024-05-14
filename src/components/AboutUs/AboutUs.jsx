@@ -91,13 +91,13 @@ function About() {
         </div>
       </div>
       {modalOpen && (
-        <div className="modal">
-          <div className={`modal-content ${isExpanded ? 'expanded' : ''}`}>
-          <h2 className="modal-name">{selectedMember.name}</h2>
+        <div className="modalAbout">
+          <div className={`modal-contentAbout ${isExpanded ? 'expanded' : ''}`}>
+          <h2 className="modal-nameAbout">{selectedMember.name}</h2>
             <a href={selectedMember.instagramUrl} target="_blank" rel="noopener noreferrer">
               <img src={igIcon} alt="Instagram" className="instagram-icon" />
             </a>
-            <button onClick={closeModal} className="modal-close-button">Close</button>
+            <button onClick={closeModal} className="modal-close-buttonAbout">Close</button>
           </div>
         </div>
       )}

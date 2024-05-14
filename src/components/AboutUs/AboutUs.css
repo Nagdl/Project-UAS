@@ -36,15 +36,7 @@
       transform: rotate(360deg);
     }
   }
-  
-  /* body {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 20px;
-      background-color: lightblue;
-  }
-   */
-  
+
   .title {
     font-size: 40px;
     font-weight: bold;
@@ -129,7 +121,7 @@
   }
   
   
-  .modal {
+  .modalAbout {
     position: fixed;
     top: 0;
     left: 0;
@@ -141,19 +133,19 @@
     align-items: center;
   }
   
-  .modal-content {
+  .modal-contentAbout {
     background-color: white;
     padding: 10px;
     border-radius: 12px;
     text-align: center;
   }
   
-  .modal-name {
+  .modal-nameAbout {
     font-weight: bold;
   }
   
   
-  .modal-close-button {
+  .modal-close-buttonAbout {
     background-color: red;
     color: white;
     padding: 8px 8px;
@@ -162,11 +154,11 @@
     transition: transform 0.3s ease;
   }
   
-  .modal-close-button:hover {
+  .modal-close-buttonAbout:hover {
     transform: scale(1.1);
   }
   
-  .modal-content.expanded {
+  .modal-contentAbout.expanded {
     width: 150px; 
     transition: width 0.3s ease;
   }
@@ -199,7 +191,7 @@
     padding: 20px;
   }
   
-  .modal-content {
+  .modal-contentAbout {
     width: 300px;
     background-color: white;
     padding: 20px;

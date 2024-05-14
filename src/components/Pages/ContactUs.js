@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 function ContactUs(){
     return (
         <div className="container-large">
-            <div className="Nav">
+            <div className="iniNav">
               <Navbar/>  
             </div>
             <div className="IsiContact">

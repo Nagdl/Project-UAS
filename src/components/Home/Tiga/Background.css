@@ -2,11 +2,16 @@
 
 .isi {
     width: 100%;
+    height: 100%;
     position: absolute;
-    top: 28%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .OverlayList{
@@ -14,25 +19,17 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .isi h1{
     width: 100%;
     color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 150px;
+    font-size: 140px;
     animation-delay: 1s;
     z-index: 100;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
-}
-
-@keyframes animasi {
-    to{
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 .isi p, .isi h1{
@@ -41,28 +38,25 @@
     animation: animasi .5s .7s ease-in-out 1 forwards;
 }
 
-
 #buttonList {
-    padding: 17px 40px;
     border-radius: 15px;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);;
+    background-color: rgb(255, 255, 255);
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 15px;
     transition: all 0.5s ease;
     width: fit-content;
-    margin: 0 auto;
+    margin: 10px 0;
 }
-  
+
 #buttonList:hover {
     letter-spacing: 3px;
     background-color: #000000;  
     color: white;
     box-shadow: #000000 0px 7px 29px 0px;
 }
-  
+
 #buttonList:active {
     letter-spacing: 3px;
     background-color: #000000;
@@ -71,4 +65,47 @@
     transform: translateY(5px);
     transition: 100ms;
     border: #000000;
+}
+
+
+@media (min-width: 1000px) {
+    #buttonList {
+        padding: 15px 35px;
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 1000px) {
+    .isi h1{
+        font-size: 100px;
+    }
+    #buttonList {
+        padding: 14px 33px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .isi h1{
+        font-size: 80px;
+    }
+    #buttonList {
+        padding: 12px 31px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 535px) {
+    .isi h1{
+        font-size: 60px;
+    }
+    #buttonList {
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+}
+
+@keyframes animasi {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

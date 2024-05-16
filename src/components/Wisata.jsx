@@ -6,6 +6,8 @@ import Temiangan from "../assets/Temiangan hill.jpg";
 import Minang from "../assets/minangrua.jpg";
 import Teca from "../assets/tebing cepa.jpg"
 import Pahawang from "../assets/pantai pahawang.jpg"
+import Karang from "../assets/pantai karang bebai.jpg"
+import Gunung from "../assets/gunungKra.jpg"
 
 const Wisata = [
     {
@@ -71,6 +73,24 @@ const Wisata = [
         lng: "105.22216",
         lat: "-5.67481",
         deskripsi: "Pantai Pahawang di Lampung adalah surga tersembunyi yang menakjubkan bagi para pencinta alam dan penggemar aktivitas air. Terletak di ujung selatan Pulau Sumatra, pantai ini menawarkan keindahan alam yang memukau, dengan air laut yang jernih, pasir putih yang lembut, dan hamparan terumbu karang yang berwarna-warni. Pemandangan bawah lautnya begitu memesona dengan keberagaman hayati yang luar biasa, membuatnya menjadi destinasi snorkeling dan diving yang populer."
+    },
+
+    {
+        id: 9,
+        name: "Pantai Karang Bebai",
+        imgURL: Karang,
+        lng: "104.90515",
+        lat: "-5.67550",
+        deskripsi: "Pantai Karang Bebai adalah sebuah destinasi pantai yang indah di Lampung, Indonesia. Terletak di sebelah barat laut kota Bandar Lampung, pantai ini terkenal dengan keindahan panorama alamnya yang menakjubkan. Karang-karang besar dan unik menghiasi pantai ini, menciptakan pemandangan yang memukau. Selain itu, airnya yang jernih dan pasir putihnya menambah pesona Pantai Karang Bebai sebagai tempat ideal untuk berlibur dan menikmati keindahan alam Lampung."
+    },
+
+    {
+        id: 10,
+        name: "Gunung Anak Krakatau",
+        imgURL: Gunung,
+        lng: "105.42673",
+        lat: "-6.10060",
+        deskripsi: "Gunung Anak Krakatau adalah sebuah gunung berapi yang terletak di Selat Sunda, di lepas pantai Lampung, Indonesia. Gunung ini terbentuk dari aktivitas vulkanik setelah letusan dahsyat Gunung Krakatau pada tahun 1883. Dengan ketinggian sekitar 300 meter di atas permukaan laut, Gunung Anak Krakatau menjadi daya tarik bagi para pendaki dan pengunjung yang tertarik dengan keindahan alam dan fenomena geologi. Selain menawarkan pemandangan yang spektakuler, keberadaan Gunung Anak Krakatau juga menjadi penelitian yang menarik bagi ilmuwan untuk memahami proses pembentukan gunung berapi dan aktivitas vulkanik."
     },
 
 ];

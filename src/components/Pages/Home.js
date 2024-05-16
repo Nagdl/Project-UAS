@@ -15,7 +15,6 @@ function Home() {
         <IsiDua />
         <Judul />
         <IsiTiga />
-        {/* <Weather /> */}
         <Footer />
     </div>
     );

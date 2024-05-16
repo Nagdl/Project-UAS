@@ -27,6 +27,18 @@
     object-fit: cover;
 }
 
+@media (max-width: 768px){
+    .bungkusLogo img{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    .teksLogo p{
+        margin: 0;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+}
 .bungkusLogo {
     width: 150px;
     display: flex;
@@ -46,6 +58,7 @@
 .teksLogo p{
     margin: 0;
     letter-spacing: 2px;
+    /* font-size: 16px; */
 }
 
 

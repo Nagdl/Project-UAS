@@ -1,4 +1,10 @@
-.iniWeather{
+.containerWeather{
     text-align: center;
     font-weight: 500;
+    color: white;
+    width: 50%;
+    background: black;
+    border-radius: 20px;
+    margin: 0 auto;
+    
 }

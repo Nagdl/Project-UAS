@@ -15,7 +15,7 @@ function IsiSatu() {
               <img src={saibumi} alt="xixi"/>
               <div className="iniButton">
                 <button className="buttonDiscover" type="button" href="#mainSatu">Discover More</button>
-                </div>
+              </div>
             </div>
             <div className="overlay"></div>
         </div>

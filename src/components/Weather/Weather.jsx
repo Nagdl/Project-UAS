@@ -16,10 +16,10 @@ function Weather() {
         const response = await fetch(`${api.base}weather?q=Lampung&units=metric&APPID=${api.key}`);
         const result = await response.json();
         setWeather(result);
-      } catch (error) {
+      } catch (error) { 
         console.error("Error fetching weather data", error);
       }
-    };
+    }
 
     // Panggil fungsi pencarian saat komponen dimuat
     searchWeather();
@@ -36,11 +36,15 @@ function Weather() {
           
             <div className="condition">
               <p>{weather.main.temp}°C</p>
+              <img 
+                src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} 
+                alt={weather.weather[0].description}
+              />
               <p>{weather.weather[0].main}</p>
             </div>
 
             <div className="description">
-              <p>({weather.weather[0].description})</p>
+                <p>({weather.weather[0].description})</p>
             </div>
           </div>
         ) : (

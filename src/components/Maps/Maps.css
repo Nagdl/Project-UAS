@@ -1,35 +1,13 @@
-/* BUNGKUS CONTENT */
-
-.bungkusContent{
-    color: white;
-}
-
-.Top h1{
-    text-align: center;
-    font-weight: 600;
-}
-
-.iniGambar{
-    position: relative;
-    width: 40%;
-    height: calc(50vh - 77px);
-}
-
-.iniGambar img{
+.gambarWisata img {
     width: 100%;
-    height: 100%;
+    border-radius: 15px;
     object-fit: cover;
 }
 
-.map-wrap {
-    position: relative;
-    width: 40%;
-    height: calc(50vh - 77px);
-}
-    
-.map {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.gambarWisata{
+    width: 60vw;
 }
 
+.map-wrap{
+    width: 100%;
+}

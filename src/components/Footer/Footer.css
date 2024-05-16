@@ -10,7 +10,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15rem;
+    /* gap: 15rem; */
     padding: 2rem 0;
 }
 

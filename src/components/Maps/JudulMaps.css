@@ -7,11 +7,20 @@
 .judulDestinasi{
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 15vw;
+    font-size: 12vw;
     font-weight: 800;
     background: linear-gradient(to bottom, yellow 60%,  rgba(118,88,39,1), black 90%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    padding-top:300px;
+}
+
+.dekorasiWisata img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dekorasiWisata{
+    width: 20rem;
 }

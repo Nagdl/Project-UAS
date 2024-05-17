@@ -1,29 +1,20 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaInstagram, FaTwitter, FaTwitch } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import './Footer.css';
 import logo from "../../assets/SigerLampung.png";
 import { Link } from "react-router-dom";
-
-
-const items = [
-    {
-        name: 'GitHub',
-        icon: FaGithub,
-        link: 'https://github.com/Nagdl/Project-UAS',
-    },
-];
-
+import Weather from "../Weather/Weather";
 
 const Footer = () => (
     <>
         <div className="footer-container">
             <div className="footer-grid">
                 <div className="kiri">
-                    <div className="bungkusLogo">
+                    <div className="bungkusLogoFoot">
                         <div className="iconLogo"><img src={logo} alt=""/></div>
-                        <div className="teksLogo"><p>LAMPCARA</p></div>
+                        <div className="teksLogoFoot"><p>LAMPCARA</p></div>
                     </div>
-                    <p>Lampung adalah provinsi yang terletak di ujung selatan Pulau Sumatera, Indonesia. Wilayah ini dikenal akan keindahan alamnya yang memukau, mulai dari pantai-pantai eksotis hingga pegunungan yang hijau. Budaya Lampung yang kaya dan beragam tercermin dalam tradisi-tradisi adat serta kesenian lokal seperti tari Piring dan tari Gending. Selain itu, Lampung juga terkenal dengan kulinernya yang lezat, seperti sate kambing dan empek-empek. Keunikan alam, budaya, dan kuliner membuat Lampung menjadi destinasi yang menarik bagi wisatawan lokal maupun mancanegara.</p>
+                    <p>Lampung adalah sebuah provinsi di ujung selatan Pulau Sumatra, Indonesia. Provinsi ini terkenal dengan kekayaan alamnya yang memukau, mulai dari pantai-pantai berpasir putih yang membentang panjang, hingga pegunungan hijau yang menjulang tinggi. Keindahan alam Lampung tidak hanya terlihat dari pemandangan lautnya yang biru jernih, tetapi juga dari keanekaragaman hayati yang hidup di hutan-hutannya yang rimbun. Sungai-sungai yang mengalir deras dan air terjun yang megah menambah pesona alam yang menakjubkan, membuat Lampung menjadi destinasi yang memikat hati para pencinta alam dan petualang.</p>
                 </div>
                 <div className="kanan">
                     <p>Quick Links</p>
@@ -32,18 +23,19 @@ const Footer = () => (
                     <Link to="/About">About Us</Link><br />
                     <Link to="/ContactUs">Contact Us</Link><br />
                 </div>
+                <div className="iniWeather2">
+                    <Weather />
+                </div>
             </div>
 
             <div className="footer-divider"></div>
 
             <div className="footer-socials">
                 <p className="footer-text">Copyright © 2024 | All rights reserved</p>
-                    <div className="social-icons">
-                        {items.map((item, index) => (
-                        <a key={index} href={item.link} className="social-link">
-                            <item.icon />
-                        </a>
-                    ))}
+                <div className="social-icons">
+                    <a href="https://github.com/Nagdl/Project-UAS" className="social-link">
+                        <FaGithub />
+                    </a>
                 </div>
             </div>
         </div>

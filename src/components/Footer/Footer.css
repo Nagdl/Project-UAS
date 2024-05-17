@@ -9,22 +9,39 @@
     max-width: 1240px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* gap: 15rem; */
+    grid-template-columns: 4fr 2fr 3fr; 
+    grid-template-areas: 
+      "kiri kanan iniWeather2"; 
     padding: 2rem 0;
 }
 
 @media (max-width: 1024px) {
     .footer-grid {
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+
+    .kiri {
+        grid-column: span 2;
+    }
+
+    .kanan {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .iniWeather2 {
+        grid-column: 2;
+        grid-row: 2;
     }
 }
-
+/* 
 @media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: 2fr;
     }
-}
+} */
 
 .footer-title {
     font-weight: bold;
@@ -71,7 +88,7 @@
 }
 
 .footer-text {
-    padding: 1rem 0;
+    padding: 10px 0;
 }
 
 .footer-divider {
@@ -94,19 +111,33 @@ ul{
 
 .kiri p{
     margin-top: 10px;
+    text-align: justify;
     
 }
 
 .kanan{
-    margin-top: 10%;
+    margin: auto;    
 }
 
 .kanan p{
     font-size: 18px;
     font-weight: 600;
 }
-.kanan Link{
+.kanan a {
     text-decoration: none;
-    color: #3F72AF;
+    color: white;
+    font-weight: 400;
+    transition: font-weight 0.2s ease-in-out;
 }
 
+.kanan a:hover {
+    font-weight: 500;
+}
+
+.teksLogo{
+    margin: 0 auto;
+}
+
+.iniWeather2{
+    margin: auto;
+}

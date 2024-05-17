@@ -3,9 +3,9 @@ import IsiSatu from "../../components/Home/Satu/isiSatu";
 import IsiDua from "../../components/Home/Dua/IsiDua";
 import IsiTiga from "../../components/Home/Tiga/IsiTiga";
 import Footer from "../../components/Footer/Footer";
+import IsiEmpat from "../Home/Empat/IsiEmpat"
 import Judul from "../Home/Tiga/JudulTiga";
 import React from 'react';
-import Weather from "../Weather/Weather";
 
 function Home() {
     return (
@@ -14,7 +14,8 @@ function Home() {
         <IsiSatu />
         <IsiDua />
         <Judul />
-        <IsiTiga />
+        <IsiTiga /> 
+        <IsiEmpat />
         <Footer />
     </div>
     );

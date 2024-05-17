@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 20%, rgba(118, 88, 39, 1) 99%);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 15%, rgba(118, 88, 39, 1) 45%, rgb(0, 0, 0) );
 }
 
 /* Arrow ===================== */

@@ -29,22 +29,23 @@ function Weather() {
     <div className="containerWeather">
         {typeof weather.main !== "undefined" ? (
           <div>
-    
-            <div className="location">
-              <p>{weather.name}</p>
+            <div className="lokasi">
+              <p>{weather.name}'s Weather</p>
             </div>
           
-            <div className="condition">
+            <div className="suhu">
               <p>{weather.main.temp}°C</p>
+            </div>
+            <div className="iniWeather">
               <img 
-                src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} 
-                alt={weather.weather[0].description}
+                src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description}
               />
               <p>{weather.weather[0].main}</p>
             </div>
 
             <div className="description">
-                <p>({weather.weather[0].description})</p>
+                <p>Status &nbsp;: {weather.weather[0].description}</p>
+                <p>Wind Speed &nbsp;: {weather.wind.speed} Km/H</p>
             </div>
           </div>
         ) : (

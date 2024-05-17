@@ -1,0 +1,13 @@
+.containerIsiEmpat{
+    width: 100%;
+    height: fit-content;
+    padding: 0 1% 5% 1%;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 15%, rgba(118, 88, 39, 1) 45%, rgb(0, 0, 0) );
+}
+
+.iniCard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin: 50px;
+}

@@ -28,23 +28,20 @@ function Map(props2) {
   }, [lampung.lng, lampung.lat, zoom]);
 
   return (
-    <div className="container bungkusContent">  
-      <div className="isiMap">
-        <div className="top">
-          <h1 className="judulWisata">{props2.title}</h1>
+    <div className="container-fluid bungkusContent"> 
+      <h1 className="judulWisata">{props2.title}</h1>
+      <div className="isiContent">    
+        <div className="gambarWisata">
+          <img src={props2.image} /> 
         </div>
         
-        <div className="gambarWisata">
-          <img src={props2.image} />
+        <div className="Deskripsi">
+          <p>{props2.teks}</p>
         </div>
       </div>
-
+      
       <div className="map-wrap">
-          <div ref={mapContainer} className="map" />
-      </div>
-
-      <div className="Deskripsi">
-        <p>{props2.teks}</p>
+            <div ref={mapContainer} className="map" />
       </div>
     </div>
   );

@@ -1,6 +1,17 @@
+.fotoYoutube{
+    background: linear-gradient( to bottom, rgb(0, 0, 0) 30%, rgba(118,88,39,1) 99%);
+    display: flex;
+    justify-content: center;
+}
+
 .containerIsiWisata{
-    margin: 0;
-    padding: 0;
-    background: linear-gradient( to top, rgb(0, 0, 0) 15%, rgba(118,88,39,1) 50%);
-    padding-bottom: 20px;
+    background-color: linear-gradient( to top, rgb(0, 0, 0) 30%, rgba(118,88,39,1) 99%);
+}
+
+.bungkusContent{
+    overflow-x: hidden;
+}
+
+.isiMainWisata{
+    background-color: linear-gradient( to bottom, rgb(0, 0, 0) 30%, rgba(118,88,39,1) 99%);
 }

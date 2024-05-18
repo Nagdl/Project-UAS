@@ -4,23 +4,27 @@
     
 }
 
-.judulDestinasi{
+.containerJudul{
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 20%, rgba(118, 88, 39, 1) 100%);;
+}
+  
+.judulDestinasi {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 12vw;
+    font-size: 13vw;
     font-weight: 800;
-    background: linear-gradient(to bottom, yellow 60%,  rgba(118,88,39,1), black 90%);
+    background: linear-gradient(to top, #ffd700 30%, black 99%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    transform: translate(0,-200%);
+    z-index: 100;
 }
-
-.dekorasiWisata img{
+  
+.dekorWisata img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
+    height: 100%;
 }
 
-.dekorasiWisata{
-    width: 20rem;
-}
+

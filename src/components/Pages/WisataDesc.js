@@ -9,11 +9,21 @@ import Footer from "../Footer/Footer";
 function WisataDesc(){
     return (
         <div className="container-large containerWisata">
+            <Navbar />
             <div className="containerIsiWisata">
+                <div className="isiWisata">
+                    <isiWisata />
+                </div>
+
                 <JudulMaps />
-                <DYoutube />
-                <Weather />
-                <PageMaps />
+
+                <div className="fotoYoutube">
+                    <DYoutube />
+                </div>
+
+                <div className="isiMainWisata">
+                    <PageMaps />    
+                </div>
             </div>
             <Footer /> 
         </div> 

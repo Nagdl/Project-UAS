@@ -1,13 +1,56 @@
-.gambarWisata img {
-    width: 100%;
-    border-radius: 15px;
+.judulWisata{
+    transform: translate(10%,300%);
+    font-size: 4rem;
+    font-weight: 700;
     object-fit: cover;
+    text-shadow: 20%;
+    z-index: 100;
 }
 
-.gambarWisata{
-    width: 60vw;
+.bungkusContent .isiContent{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.isiContent .gambarWisata {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.isiContent .gambarWisata img{
+    z-index: 111;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+.isiContent .Deskripsi{
+    z-index: 222;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+    background: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255,255, 255,0.1);
+    border-radius: 10px;
+    transform: translate(-80px,50px);
 }
 
 .map-wrap{
-    width: 100%;
+    width: 200px;
+    
 }
+
+

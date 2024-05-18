@@ -35,7 +35,7 @@ const ExtraSection = () => (
 );
 
 const CardContainer = () => (
-  <>
+  <div className="containerAboutUs">
     <header className="header">
       <h1 className="header__title">About Us</h1>
     </header>
@@ -68,7 +68,7 @@ const CardContainer = () => (
       </div>
       <ExtraSection />
     </div>
-  </>
+  </div>
 );
 
 export default CardContainer;

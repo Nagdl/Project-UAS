@@ -38,8 +38,8 @@
 .containerAboutUs {
   font-family: var(--body-font);
   background-image: linear-gradient( to bottom, rgb(0, 0, 0) 10%, rgba(118,88,39,1) 99%);
-  color: var(--text-color);
-  padding: 10rem 0;
+  /* color: var(--text-color); */
+  padding: 10rem 0 2rem 0;
 }
 
 img {
@@ -52,7 +52,6 @@ img {
 .header {
   text-align: center;
   margin: 2rem 0 10rem; /* Adjusted margin-bottom to create space */
-  padding-top: 90px;
 }
 
 .header__title {
@@ -203,6 +202,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+  color: white;
   margin-bottom: 10rem; /* Added margin-bottom to create space */
 }
 
@@ -237,7 +237,6 @@ img {
   grid-column: span 1;
   font-size: var(--paragraph-font-size);
   line-height: 1.6;
-  color: var(--text-color);
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -249,12 +248,13 @@ img {
 
   .card__data {
     width: 250px;
+    height: 500px;
     padding: 10rem;
   }
 }
 
 /* For medium devices */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1120px) {
   .card__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;

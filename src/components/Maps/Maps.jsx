@@ -11,7 +11,7 @@ function Map(props2) {
   maptilersdk.config.apiKey = 'nLc9j7VUuPe3AxvVw6Cm'; // Ganti dengan kunci API MapTiler Anda
 
   useEffect(() => {
-    // if (map.current) return; // Menghentikan inisialisasi peta lebih dari sekali
+    if (map.current) return; // Menghentikan inisialisasi peta lebih dari sekali
 
     map.current = new maptilersdk.Map({
       container: mapContainer.current,

@@ -64,7 +64,7 @@ const Wisata = [
         imgURL: Teca,
         lng: "105.65646",
         lat: "-5.74503",
-        deskripsi: "Way Tebing Cepa di Lampung adalah sebuah destinasi wisata alam yang menawarkan keunikan berupa tebing-tebing batu dengan sungai yang jernih mengalir di antaranya. Lokasi ini menarik bagi para petualang dan pecinta alam, menawarkan pemandangan yang dramatis dan kesempatan untuk melakukan kegiatan luar ruangan seperti arung jeram dan trekking di sepanjang jalur yang memadukan tantangan dan keindahan alam. Air sungai Way Tebing Cepa yang dingin dan segar sangat cocok untuk menyegarkan diri setelah beraktivitas, sementara suara alam yang tenang memberikan suasana relaksasi yang mendalam."
+        deskripsi: "Way Tebing Cepa di Lampung adalah sebuah destinasi wisata alam yang menawarkan keunikan berupa tebing-tebing batu dengan sungai yang jernih mengalir di antaranya. Lokasi ini menarik bagi para petualang dan pecinta alam, menawarkan pemandangan yang dramatis dan kesempatan untuk melakukan kegiatan luar ruangan seperti arung jeram dan trekking di sepanjang jalur yang memadukan tantangan dan keindahan alam. Air sungai Way Tebing Cepa yang dingin dan segar sangat cocok untuk menyegarkan diri setelah beraktivitas."
     },
     {
         id: 8,
@@ -90,7 +90,7 @@ const Wisata = [
         imgURL: Gunung,
         lng: "105.42673",
         lat: "-6.10060",
-        deskripsi: "Gunung Anak Krakatau adalah sebuah gunung berapi yang terletak di Selat Sunda, di lepas pantai Lampung, Indonesia. Gunung ini terbentuk dari aktivitas vulkanik setelah letusan dahsyat Gunung Krakatau pada tahun 1883. Dengan ketinggian sekitar 300 meter di atas permukaan laut, Gunung Anak Krakatau menjadi daya tarik bagi para pendaki dan pengunjung yang tertarik dengan keindahan alam dan fenomena geologi. Selain menawarkan pemandangan yang spektakuler, keberadaan Gunung Anak Krakatau juga menjadi penelitian yang menarik bagi ilmuwan untuk memahami proses pembentukan gunung berapi dan aktivitas vulkanik."
+        deskripsi: "Gunung Anak Krakatau adalah sebuah gunung berapi yang terletak di Selat Sunda, di lepas pantai Lampung, Indonesia. Gunung ini terbentuk dari aktivitas vulkanik setelah letusan dahsyat Gunung Krakatau pada tahun 1883. Dengan ketinggian sekitar 300 meter di atas permukaan laut, Gunung Anak Krakatau menjadi daya tarik bagi para pendaki dan pengunjung yang tertarik dengan keindahan alam dan fenomena geologi. Selain menawarkan pemandangan yang spektakuler."
     },
 
 ];

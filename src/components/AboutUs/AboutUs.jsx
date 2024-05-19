@@ -29,7 +29,7 @@ const ExtraSection = () => (
       <img src={Img2} alt="Hover" className="extra-section__img extra-section__img--hover" />
     </div>
     <p className="extra-section__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+      Kami merupakan Kelompok 8 yang merupakan kelompok yang sedang melakukan project Ujian Akhir Semester (UAS) mata kuliah Intro to Internet Technology. Kelompok kami yang berisikan Kelvin Jonathan Setiawan yang merupakan Leader project kami dengan para pengikutnya Gadiel Narain, Gregorius Frederico, dan Kent Seanly Teguh. Para pengikut beserta Leadernya akan senantiasa mengerjakan Project yang kami kerjakan.
     </p>
   </div>
 );

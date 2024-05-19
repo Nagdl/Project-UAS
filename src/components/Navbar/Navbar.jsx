@@ -28,7 +28,7 @@ function Navbar(){
         <nav className= {containerNavbar ? "containerNavbar aktif navbar navbar-expand-lg navbar-dark fixed-top" : "containerNavbar navbar navbar-expand-lg navbar-dark fixed-top p-4"}>
             <div className="container-fluid">
                 {/* Logo */}
-                <div className={bungkusLogo ? "bungkusLogo" : "bungkusLogo"}>
+                <div className={bungkusLogo ? "aktifLogo" : "bungkusLogo"}>
                     <div className="iconLogo"><img src={logo} alt=""/></div>
                     <div className="teksLogo"><p>LAMPCARA</p></div>
                 </div>

@@ -9,7 +9,6 @@ function JudulMaps() {
       <div className="dekorWisata">
         <img src={pohon} />
       </div>
-
         <div className="judulDestinasi">
             <p>Wisata</p>
         </div>

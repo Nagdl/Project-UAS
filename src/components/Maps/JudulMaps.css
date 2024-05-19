@@ -12,6 +12,9 @@
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 13vw;
+    position: absolute;
+    width: 100%;
+    text-align: center;
     font-weight: 800;
     background: linear-gradient(to top, #ffd700 30%, black 99%);
     -webkit-background-clip: text;

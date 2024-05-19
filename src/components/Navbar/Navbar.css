@@ -112,6 +112,7 @@
 
 /* Transisi on scroll */
 .aktif{
+    height: 90px;
     font-size: 100%;
     transition: all 1.3s;
     background: linear-gradient(346deg, rgba(0,0,0,1) 0%, rgba(118,88,39,1) 52%, rgba(255,211,29,1) 100%);
@@ -123,11 +124,13 @@
 }
 
 .aktifLogo{
+    width: 120px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.aktiflogo .img{
+.aktifLogo img{
     width: 100%;
     object-fit: cover;
 }

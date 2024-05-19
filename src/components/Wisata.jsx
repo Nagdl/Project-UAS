@@ -32,7 +32,7 @@ const Wisata = [
         imgURL: Lembah,
         lng: "105.23653",
         lat: "-5.40945",
-        deskripsi: "Lembah Batu, terletak di Lampung, adalah sebuah destinasi alam yang memikat dengan keindahan alamnya yang menakjubkan. Terletak di antara pegunungan yang hijau dan lembah yang dalam, tempat ini menawarkan pemandangan yang memukau bagi para pengunjungnya. Dikelilingi oleh hutan-hutan yang rimbun dan sungai yang mengalir tenang, Lembah Batu menawarkan suasana yang damai dan menenangkan bagi siapa pun yang mengunjunginya. Selain keindahan alamnya, Lembah Batu juga memiliki nilai sejarah dan budaya yang kaya, tercermin dari situs-situs arkeologis yang tersebar di sekitarnya. Bagi para petualang dan pecinta alam, Lembah Batu menjadi destinasi yang sempurna untuk menikmati keajaiban alam dan menyelami kekayaan budaya Lampung."
+        deskripsi: "Lembah Batu, terletak di Lampung, adalah sebuah destinasi alam yang memikat dengan keindahan alamnya yang menakjubkan. Terletak di antara pegunungan yang hijau dan lembah yang dalam, tempat ini menawarkan pemandangan yang memukau bagi para pengunjungnya. Dikelilingi oleh hutan-hutan yang rimbun dan sungai yang mengalir tenang, Lembah Batu menawarkan suasana yang damai dan menenangkan bagi siapa pun yang mengunjunginya. Selain keindahan alamnya, Lembah Batu juga memiliki nilai sejarah dan budaya yang kaya, tercermin dari situs-situs arkeologis yang tersebar di sekitarnya."
     },
     {
         id: 4,
@@ -56,7 +56,7 @@ const Wisata = [
         imgURL: Minang,
         lng: "105.71481",
         lat: "-5.85670",
-        deskripsi: "Pantai Minang Rua di Lampung adalah destinasi yang menawarkan pemandangan yang memukau dengan hamparan pasir putih yang lembut dan air laut yang jernih berwarna biru kehijauan. Pengunjung dapat merasakan ketenangan saat berjalan di tepi pantai, menikmati semilir angin laut yang sejuk, atau bersantai di bawah rindangnya pohon kelapa yang tersebar di sepanjang pantai. Selain itu, Pantai Minangrua juga menjadi tempat yang sempurna untuk berbagai aktivitas luar ruang seperti berenang, snorkeling, atau sekedar menikmati panorama sunset yang mempesona. Keindahan alami dan suasana yang masih asri membuat pantai ini menjadi salah satu destinasi favorit bagi para pencinta alam dan mereka yang mencari kedamaian jauh dari hiruk pikuk kehidupan kota."
+        deskripsi: "Pantai Minang Rua di Lampung adalah destinasi yang menawarkan pemandangan yang memukau dengan hamparan pasir putih yang lembut dan air laut yang jernih berwarna biru kehijauan. Pengunjung dapat merasakan ketenangan saat berjalan di tepi pantai, menikmati semilir angin laut yang sejuk, atau bersantai di bawah rindangnya pohon kelapa yang tersebar di sepanjang pantai. Selain itu, Pantai Minangrua juga menjadi tempat yang sempurna untuk berbagai aktivitas luar ruang seperti berenang, snorkeling, atau sekedar menikmati panorama sunset yang mempesona."
     },
     {
         id: 7,

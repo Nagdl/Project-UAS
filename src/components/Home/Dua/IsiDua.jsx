@@ -14,18 +14,18 @@ function IsiDua() {
     return(
         <div className="bungkusIsiDua">
             <div className="container-fluid isiDua px-0" id="mainSatu">
-                <p className="judulIsiDua">LAMPUNG</p>
-                <p className="judulTreasure">The Bounty Treasure</p>
+                <p className="judulIsiDua" data-aos="fade-up" data-aos-delay="200">LAMPUNG</p>
+                <p className="judulTreasure" data-aos="fade-in" data-aos-delay="600">The Bounty Treasure</p>
                     <div className="motto">
                         <div className="mottoLampung ">
-                            <h1 className="petikDua">❝ Satu Bumi, Dua Masyarakat ❞</h1>
-                            <p className="penjelasanMotto">Sang Bumi Ruwai Jurai merupakan motto dari provinsi Lampung, <br/> yang memiliki makna satu bumi dua tradisi (ruwa dan jurai). 
+                            <h1 className="petikDua" data-aos="fade-right" data-aos-delay="200">❝ Satu Bumi, Dua Masyarakat ❞</h1>
+                            <p className="penjelasanMotto" data-aos="fade-right" data-aos-delay="200">Sang Bumi Ruwai Jurai merupakan motto dari provinsi Lampung, <br/> yang memiliki makna satu bumi dua tradisi (ruwa dan jurai). 
                             Dua tradisi yang terdapat pada <br/>masyarakat asli Lampung yang mengkristal pada Adat yaitu Saibatin dan tradisi budaya Pepadun.</p>
                         </div>
 
                         <div className="treasure">
-                            <h1 className="petikDua">❝ The Treasure of Sumatra ❞</h1>
-                            <p className="penjelasanMotto">Lampung menggambarkan kekayaan alam dan budaya <br/> yang dimiliki oleh provinsi ini. Keindahan alamnya,
+                            <h1 className="petikDua" data-aos="fade-left" data-aos-delay="900">❝ The Treasure of Sumatra ❞</h1>
+                            <p className="penjelasanMotto" data-aos="fade-left" data-aos-delay="900">Lampung menggambarkan kekayaan alam dan budaya <br/> yang dimiliki oleh provinsi ini. Keindahan alamnya,
                             termasuk pantai-pantai yang eksotis,<br/> hutan-hutan yang lebat, dan gunung-gunung yang megah. Selain itu, <br/> Lampung juga kaya akan budaya dan tradisi,
                             serta memiliki <br/> keanekaragaman kuliner yang khas. Julukan ini menggambarkan Lampung sebagai harta karun atau <br/> perhiasan yang berharga dari Pulau Sumatra.</p>
                         </div>

@@ -1,22 +1,35 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Wisata from "../../Wisata";
 import Card from "./Card";
 import "./IsiEmpat.css";
 
 function IsiEmpat() {
     
-    return(
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
+    return (
         <div className="containerIsiEmpat">
-            <div className="Judul">
+            <div className="Judul" data-aos="zoom-in" data-aos-delay="200">
                 Destination
             </div>
             <div className="iniCard">
-                {Wisata.map(function (wisata) {
+                {Wisata.map((wisata, index) => {
+                    const delay = 200 + (index * 100); // Calculate the delay based on the index
                     return (
-                        <Card
-                        key={wisata.id}
-                        name={wisata.name}
-                        image={wisata.imgURL}
-                        />
+                        <div 
+                            key={wisata.id} 
+                            data-aos="fade-up" 
+                            data-aos-delay={delay}
+                        >
+                            <Card
+                                name={wisata.name}
+                                image={wisata.imgURL}
+                            />
+                        </div>
                     );
                 })}
             </div>

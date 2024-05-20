@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './AboutUs.css';
 
 import KelpinImg from '../../assets/pin.jpg';
@@ -9,8 +11,8 @@ import Img1 from '../../assets/kel1.jpg';
 import Img2 from '../../assets/kel2.jpg';
 import IG from '../../assets/ig.png';
 
-const Card = ({ image, description, title, instagram }) => (
-  <article className="card__article">
+const Card = ({ image, description, title, instagram, aosDelay }) => (
+  <article className="card__article" data-aos="fade-up" data-aos-delay={aosDelay}>
     <img src={image} alt={description} className="card__img" />
     <div className="card__data">
       <span className="card__description">{description}</span>
@@ -23,7 +25,7 @@ const Card = ({ image, description, title, instagram }) => (
 );
 
 const ExtraSection = () => (
-  <div className="extra-section">
+  <div className="extra-section" data-aos="fade-up" data-aos-delay="200">
     <div className="extra-section__img-wrapper">
       <img src={Img1} alt="Default" className="extra-section__img" />
       <img src={Img2} alt="Hover" className="extra-section__img extra-section__img--hover" />
@@ -34,41 +36,51 @@ const ExtraSection = () => (
   </div>
 );
 
-const CardContainer = () => (
-  <div className="containerAboutUs">
-    <header className="header">
-      <h1 className="header__title">About Us</h1>
-    </header>
-    <div className="container">
-      <div className="card__container">
-        <Card 
-          image={KelpinImg} 
-          description="Leader" 
-          title="Kelvin Jonathan" 
-          instagram="https://instagram.com/kelvinjo2008"
-        />
-        <Card 
-          image={RicoImg} 
-          description="Member" 
-          title="Gregorius Frederico" 
-          instagram="https://instagram.com/frederico__05"
-        />
-        <Card 
-          image={GadielImg} 
-          description="Member" 
-          title="Gadiel Narain" 
-          instagram="https://instagram.com/gadiel_na"
-        />
-        <Card 
-          image={KentImg} 
-          description="Member" 
-          title="Kent Seanly" 
-          instagram="https://instagram.com/kennsnly"
-        />
+const CardContainer = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  return (
+    <div className="containerAboutUs">
+      <header className="header">
+        <h1 className="header__title" data-aos="fade-down" data-aos-delay="600">About Us</h1>
+      </header>
+      <div className="container">
+        <div className="card__container">
+          <Card 
+            image={KelpinImg} 
+            description="Leader" 
+            title="Kelvin Jonathan" 
+            instagram="https://instagram.com/kelvinjo2008" 
+            aosDelay={400} 
+          />
+          <Card 
+            image={RicoImg} 
+            description="Member" 
+            title="Gregorius Frederico" 
+            instagram="https://instagram.com/frederico__05" 
+            aosDelay={600} 
+          />
+          <Card 
+            image={GadielImg} 
+            description="Member" 
+            title="Gadiel Narain" 
+            instagram="https://instagram.com/gadiel_na" 
+            aosDelay={800} 
+          />
+          <Card 
+            image={KentImg} 
+            description="Member" 
+            title="Kent Seanly" 
+            instagram="https://instagram.com/kennsnly" 
+            aosDelay={1000} 
+          />
+        </div>
+        <ExtraSection />
       </div>
-      <ExtraSection />
     </div>
-  </div>
-);
+  );
+};
 
 export default CardContainer;

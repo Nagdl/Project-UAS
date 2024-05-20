@@ -71,7 +71,7 @@ function IsiTiga() {
     <div className="container-large containerIsiTiga">
 
       <div className="list">
-        {Wisata.map((wisata, index) => (
+        {Wisata.filter((wisata, index) => index < 10).map((wisata, index) => (
           <div className={`item ${index === itemActive ? 'active' : ''}`} key={index}>
             <Back
               name={wisata.name}

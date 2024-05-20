@@ -93,9 +93,18 @@ const Wisata = [
         lat: "-5.67550",
         deskripsi: "Pantai Karang Bebai adalah sebuah destinasi pantai yang indah di Lampung, Indonesia. Terletak di sebelah barat laut kota Bandar Lampung, pantai ini terkenal dengan keindahan panorama alamnya yang menakjubkan. Karang-karang besar dan unik menghiasi pantai ini, menciptakan pemandangan yang memukau. Selain itu, airnya yang jernih dan pasir putihnya menambah pesona Pantai Karang Bebai sebagai tempat ideal untuk berlibur dan menikmati keindahan alam Lampung."
     },
-
+    
     {
         id: 10,
+        name: "Way Kambas",
+        imgURL: Kambas,
+        lng: "105.77684",
+        lat: "-4.92740",
+        deskripsi: 'Way Kambas adalah sebuah taman nasional yang terkenal dengan pusat pelatihan gajah di Indonesia. Terletak di Lampung Timur, taman ini menawarkan pengalaman unik bagi para pengunjung untuk melihat dan berinteraksi langsung dengan gajah-gajah yang dilatih di sana. Selain gajah, Way Kambas juga menjadi rumah bagi berbagai satwa liar lainnya seperti harimau sumatra dan badak sumatra yang sangat langka. Dengan luas lebih dari 1.300 km², Way Kambas menyediakan berbagai kegiatan ekowisata yang menarik, termasuk safari hutan dan penjelajahan alam yang menakjubkan.'
+    },
+
+    {
+        id: 11,
         name: "Gunung Anak Krakatau",
         imgURL: Gunung,
         lng: "105.42673",
@@ -103,14 +112,6 @@ const Wisata = [
         deskripsi: "Gunung Anak Krakatau adalah sebuah gunung berapi yang terletak di Selat Sunda, di lepas pantai Lampung, Indonesia. Gunung ini terbentuk dari aktivitas vulkanik setelah letusan dahsyat Gunung Krakatau pada tahun 1883. Dengan ketinggian sekitar 300 meter di atas permukaan laut, Gunung Anak Krakatau menjadi daya tarik bagi para pendaki dan pengunjung yang tertarik dengan keindahan alam dan fenomena geologi. Selain menawarkan pemandangan yang spektakuler."
     },
 
-    {
-        id: 11,
-        name: "Way Kambas",
-        imgURL: Kambas,
-        lng: "105.77684",
-        lat: "-4.92740",
-        deskripsi: 'Way Kambas adalah sebuah taman nasional yang terkenal dengan pusat pelatihan gajah di Indonesia. Terletak di Lampung Timur, taman ini menawarkan pengalaman unik bagi para pengunjung untuk melihat dan berinteraksi langsung dengan gajah-gajah yang dilatih di sana. Selain gajah, Way Kambas juga menjadi rumah bagi berbagai satwa liar lainnya seperti harimau sumatra dan badak sumatra yang sangat langka. Dengan luas lebih dari 1.300 km², Way Kambas menyediakan berbagai kegiatan ekowisata yang menarik, termasuk safari hutan dan penjelajahan alam yang menakjubkan.'
-    },
     {
         id: 12,
         name: "Pantai Dewi Mandapa",

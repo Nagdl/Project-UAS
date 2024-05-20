@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
 import logo from "../../assets/SigerLampung.png";
 import { Link } from "react-router-dom";
-import Weather from '../Weather/Weather';
-
 
 function Navbar(){
     const [containerNavbar, setNavbar] = useState(false); 

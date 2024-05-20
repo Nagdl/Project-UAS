@@ -13,12 +13,12 @@ function IsiEmpat() {
 
     return (
         <div className="containerIsiEmpat">
-            <div className="Judul" data-aos="zoom-in" data-aos-delay="100">
+            <div className="Judul" data-aos="zoom-in" data-aos-delay="600">
                 Destination
             </div>
             <div className="iniCard">
                 {Wisata.map((wisata, index) => {
-                    const delay = 200 + (index * 100);
+                    const delay = 200 + (index * 100); 
                     return (
                         <div 
                             key={wisata.id} 

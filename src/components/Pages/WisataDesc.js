@@ -10,15 +10,10 @@ function WisataDesc(){
         <div className="container-large containerWisata">
             <Navbar />
             <div className="containerIsiWisata">
-                {/* <div className="isiWisata">
-                    <isiWisata />
-                </div> */}
-
                 <JudulMaps />
-                {/* 
                 <div className="fotoYoutube">
                     <DYoutube />
-                </div> */}
+                </div>
 
                 <div className="isiMainWisata">
                     <PageMaps />    

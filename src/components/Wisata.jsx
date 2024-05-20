@@ -54,30 +54,15 @@ const Wisata = [
     },
     {
         id: 5,
-        name: "Temiangan Hill",
-        imgURL: Temiangan,
-        lng: "104.43995",
-        lat: "-5.12235",
-        deskripsi: "Temiangan Hill adalah sebuah perbukitan yang mempesona, terletak di tengah-tengah keindahan alam Borneo. Dikelilingi oleh hutan hujan yang lebat dan sungai-sungai yang mengalir dengan gemericik air, Temiangan Hill menawarkan pemandangan yang menakjubkan serta kesempatan untuk menjelajahi keanekaragaman hayati yang kaya di sekitarnya. Dengan udara segar yang menyejukkan dan suasana yang tenang, tempat ini merupakan destinasi ideal bagi para petualang yang mencari ketenangan dan keindahan alam yang belum tersentuh."
-    },
-    {
-        id: 6,
         name: "Minang Rua",
         imgURL: Minang,
         lng: "105.71481",
         lat: "-5.85670",
         deskripsi: "Pantai Minang Rua di Lampung adalah destinasi yang menawarkan pemandangan yang memukau dengan hamparan pasir putih yang lembut dan air laut yang jernih berwarna biru kehijauan. Pengunjung dapat merasakan ketenangan saat berjalan di tepi pantai, menikmati semilir angin laut yang sejuk, atau bersantai di bawah rindangnya pohon kelapa yang tersebar di sepanjang pantai. Selain itu, Pantai Minangrua juga menjadi tempat yang sempurna untuk berbagai aktivitas luar ruang seperti berenang, snorkeling, atau sekedar menikmati panorama sunset yang mempesona."
     },
+
     {
-        id: 7,
-        name: "Way Tembing Cepa",
-        imgURL: Teca,
-        lng: "105.65646",
-        lat: "-5.74503",
-        deskripsi: "Way Tebing Cepa di Lampung adalah sebuah destinasi wisata alam yang menawarkan keunikan berupa tebing-tebing batu dengan sungai yang jernih mengalir di antaranya. Lokasi ini menarik bagi para petualang dan pecinta alam, menawarkan pemandangan yang dramatis dan kesempatan untuk melakukan kegiatan luar ruangan seperti arung jeram dan trekking di sepanjang jalur yang memadukan tantangan dan keindahan alam. Air sungai Way Tebing Cepa yang dingin dan segar sangat cocok untuk menyegarkan diri setelah beraktivitas."
-    },
-    {
-        id: 8,
+        id: 6,
         name: "Pantai Pahawang",
         imgURL: Pahawang,
         lng: "105.22216",
@@ -86,7 +71,7 @@ const Wisata = [
     },
 
     {
-        id: 9,
+        id: 7,
         name: "Pantai Karang Bebai",
         imgURL: Karang,
         lng: "104.90515",
@@ -95,16 +80,7 @@ const Wisata = [
     },
     
     {
-        id: 10,
-        name: "Way Kambas",
-        imgURL: Kambas,
-        lng: "105.77684",
-        lat: "-4.92740",
-        deskripsi: 'Way Kambas adalah sebuah taman nasional yang terkenal dengan pusat pelatihan gajah di Indonesia. Terletak di Lampung Timur, taman ini menawarkan pengalaman unik bagi para pengunjung untuk melihat dan berinteraksi langsung dengan gajah-gajah yang dilatih di sana. Selain gajah, Way Kambas juga menjadi rumah bagi berbagai satwa liar lainnya seperti harimau sumatra dan badak sumatra yang sangat langka. Dengan luas lebih dari 1.300 km², Way Kambas menyediakan berbagai kegiatan ekowisata yang menarik, termasuk safari hutan dan penjelajahan alam yang menakjubkan.'
-    },
-
-    {
-        id: 11,
+        id: 8,
         name: "Gunung Anak Krakatau",
         imgURL: Gunung,
         lng: "105.42673",
@@ -113,7 +89,7 @@ const Wisata = [
     },
 
     {
-        id: 12,
+        id: 9,
         name: "Pantai Dewi Mandapa",
         imgURL: DewiMandapa,
         lng: "105.24366",
@@ -121,7 +97,7 @@ const Wisata = [
         deskripsi: "Pantai Dewi Mandapa adalah destinasi wisata pantai yang memukau di Pesawaran, Lampung. Pantai ini dikenal dengan keindahan pasir putihnya dan air laut yang jernih, menawarkan pemandangan alam yang memesona serta suasana yang tenang dan nyaman. Di sekitar pantai, terdapat berbagai spot foto yang Instagramable, seperti dermaga kayu dan gazebo apung yang menambah daya tarik tempat ini. Pengunjung bisa menikmati berbagai aktivitas rekreasi seperti berenang, snorkeling, atau sekadar bersantai menikmati keindahan alam."
     },
     {
-        id: 13,
+        id: 10,
         name: "Pulau Balak",
         imgURL: Balak,
         lng: "105.18027",
@@ -129,7 +105,7 @@ const Wisata = [
         deskripsi: "Pulau Balak adalah salah satu pulau kecil yang eksotis di perairan Teluk Lampung. Pulau ini menawarkan keindahan alam yang memukau dengan pantai berpasir putih dan air laut yang bening, sangat cocok untuk snorkeling dan diving. Terumbu karang yang indah serta beragam biota laut menjadikan Pulau Balak destinasi favorit bagi pecinta alam bawah laut. Selain itu, suasana yang tenang dan alami menjadikan pulau ini tempat yang sempurna untuk beristirahat sejenak dari hiruk-pikuk kehidupan kota."
     },
     {
-        id: 14,
+        id: 11,
         name: "Danau Suoh",
         imgURL: Suoh,
         lng: "104.27336",
@@ -137,7 +113,7 @@ const Wisata = [
         deskripsi: "Danau Suoh adalah sebuah danau vulkanik yang terletak di Lampung Barat, menawarkan pemandangan alam yang luar biasa dengan tiga danau berbeda warna dalam satu kawasan. Danau ini dikelilingi oleh pegunungan dan hutan yang masih alami, menciptakan suasana yang sejuk dan segar. Selain menikmati keindahan danau, pengunjung juga bisa melihat fenomena geothermal seperti mata air panas dan semburan gas yang menarik. Danau Suoh menjadi destinasi yang sempurna bagi mereka yang ingin menikmati keindahan alam yang unik dan menenangkan."
     },
     {
-        id: 15,
+        id: 12,
         name: "Kebun Karet Trikora",
         imgURL: Karet,
         lng: "105.29812",
@@ -145,7 +121,7 @@ const Wisata = [
         deskripsi: "Kebun Karet Trikora di Lampung Tengah menawarkan wisata edukasi yang menarik tentang proses produksi karet dari pohon hingga menjadi bahan baku industri. Di sini, pengunjung bisa melihat langsung cara penyadapan getah karet dan berbagai tahap pengolahannya. Kebun ini juga memiliki pemandangan yang indah dengan deretan pohon karet yang tertata rapi, menciptakan suasana yang tenang dan nyaman untuk berjalan-jalan. Tempat ini cocok untuk wisata keluarga yang ingin belajar sekaligus menikmati keindahan alam."
     },
     {
-        id: 16,
+        id: 13,
         name: "Way Sumpuk",
         imgURL: Sumpuk,
         lng: "104.75162",
@@ -154,7 +130,7 @@ const Wisata = [
     },
     
     {
-        id: 17,
+        id: 14,
         name: "Pantai Sari Ringgung",
         imgURL: Ringgung,
         lng: "105.25217",
@@ -163,16 +139,7 @@ const Wisata = [
     },
 
     {
-        id: 18,
-        name: "Bukit Kumbang",
-        imgURL: Baka,
-        lng: "105.72653",
-        lat: "-5.87032",
-        deskripsi: "Bukit Kumbang adalah destinasi wisata di Lampung yang menawarkan pemandangan panorama alam yang luar biasa dari ketinggian. Terletak di Pesawaran, bukit ini memberikan pemandangan luas Teluk Lampung dan sekitarnya, terutama saat matahari terbit dan terbenam. Pengunjung bisa mendaki bukit melalui jalur yang menantang tetapi sepadan dengan pemandangan yang didapatkan di puncaknya. Selain itu, Bukit Kumbang juga dikenal dengan keberadaan berbagai flora dan fauna, menjadikannya tempat yang ideal untuk pecinta alam dan fotografi."
-    },
-
-    {
-        id: 19,
+        id: 15,
         name: "Teluk Kiluan",
         imgURL: Teluk,
         lng: "105.09332",
@@ -181,7 +148,7 @@ const Wisata = [
     },
 
     {
-        id: 20,
+        id: 16,
         name: "Menara Siger",
         imgURL: Siger,
         lng: "105.74974",

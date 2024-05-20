@@ -57,10 +57,10 @@ function Modal() {
                                                 <label htmlFor="name" className="form-label label">Name*</label>
                                                 <input type="text" className="form-control iniInput" name="nama" required></input>
                                             </div>
-
+                                            
                                             <div className="mb-3 inputModal">
-                                                <label htmlFor="email" className="form-label label">Email*</label>
-                                                <input type="text" className="form-control iniInput" name="email" required></input>
+                                                <label htmlFor="email" className="form-label label">Instagram</label>
+                                                <input type="text" className="form-control iniInput" name="ig"></input>
                                             </div>
 
                                             <div className="mb-3 inputModal">

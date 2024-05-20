@@ -52,7 +52,7 @@ function Modal() {
                                 </div>
                                 <div className="modal-body">
                                     <form action="https://sheetdb.io/api/v1/v1udy8ldwhtjy" method="post" id="sheetdb-form">
-                                        <div className="container">
+                                        <div className="containerAjah">
                                             <div className="mb-3 inputModal">
                                                 <label htmlFor="name" className="form-label label">Name*</label>
                                                 <input type="text" className="form-control iniInput" name="nama" required></input>

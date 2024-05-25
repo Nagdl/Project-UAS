@@ -118,9 +118,9 @@
         height: 100%;
         opacity: 1;
     }
-    .bungkusContent{
+    /* .bungkusContent{
         overflow-x: hidden;
-    }
+    } */
 }
 
 @media (max-width: 569px) {

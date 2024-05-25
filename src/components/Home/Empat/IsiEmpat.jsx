@@ -18,7 +18,7 @@ function IsiEmpat() {
             </div>
             <div className="iniCard">
                 {Wisata.map((wisata, index) => {
-                    const delay = 200 + (index * 100); 
+                    const delay = 100 + (index * 100); 
                     return (
                         <div 
                             key={wisata.id} 

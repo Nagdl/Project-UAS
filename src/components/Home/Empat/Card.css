@@ -48,3 +48,12 @@
     padding: 150px 20px;
 }
 
+.clickbaitAjah{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    top: 0;
+    right: 0;
+    margin: 5%;
+    z-index: 100px
+}

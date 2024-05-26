@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Modal.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Swal from 'sweetalert2';
 
 function Modal() {
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -17,8 +18,14 @@ function Modal() {
                     body: new FormData(document.getElementById("sheetdb-form")),
                 }).then(
                     response => response.json()
-                ).then((html) => {
-                    window.location.href = 'ContactUs';
+                ).then(() => {
+                    Swal.fire({
+                        title: "Thankyou!",
+                        text: "We really appreciate your feedback",
+                        icon: "success"
+                    }).then(() => {
+                        window.location.href = 'ContactUs';
+                    });
                 });
             }
         };
@@ -59,7 +66,7 @@ function Modal() {
                                             </div>
                                             
                                             <div className="mb-3 inputModal">
-                                                <label htmlFor="email" className="form-label label">Instagram</label>
+                                                <label htmlFor="email" className="form-label label">Instagram (Optional)</label>
                                                 <input type="text" className="form-control iniInput" name="ig"></input>
                                             </div>
 
@@ -69,7 +76,7 @@ function Modal() {
                                             </div>
 
                                             <div className="modal-footer">
-                                                <button type="submit" className="btn btn-dark SubmitButton" disabled={formSubmitted}>Submit</button>
+                                                <button type="submit" id="alertButton" className="btn btn-dark SubmitButton" disabled={formSubmitted}>Submit</button>
                                             </div>
                                         </div>
                                     </form>

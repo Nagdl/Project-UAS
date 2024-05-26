@@ -107,6 +107,12 @@ img {
   align-items: center; /* Center content horizontally */
 }
 
+@media (max-width: 768px){
+  .card__data{
+    width: 75%;
+  }
+}
+
 .card__description {
   display: block;
   font-size: var(--small-font-size);

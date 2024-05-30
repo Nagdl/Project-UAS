@@ -2,13 +2,10 @@ import GigiHiu from "../assets/GigiHiu.png";
 import Lanakila from "../assets/LanakilaLake.webp";
 import Lembah from "../assets/LembahBatu.jpeg";
 import Pisang from "../assets/PulauPisang.jpg";
-import Temiangan from "../assets/Temiangan hill.jpg";
 import Minang from "../assets/minangrua.jpg";
-import Teca from "../assets/tebing cepa.jpg"
 import Pahawang from "../assets/pantai pahawang.jpg"
 import Karang from "../assets/pantai karang bebai.jpg"
 import Gunung from "../assets/gunungKra.jpg"
-import Baka from "../assets/Bakauheni.jpg"
 import Suoh from "../assets/DanauSuoh.jpg"
 import Karet from "../assets/KebunKaretTrikora.jpg"
 import Siger from "../assets/MenaraSiger.jpg"
@@ -16,7 +13,6 @@ import DewiMandapa from "../assets/PantaiDewiMandapa.jpg"
 import Ringgung from "../assets/PantaiSariRinggung.png"
 import Teluk from "../assets/PantaiTelukKiluan.jpg"
 import Balak from "../assets/PulauBalak.jpg"
-import Kambas from "../assets/WayKambas.webp"
 import Sumpuk from "../assets/WaySumpuk.jpg"
 
 const Wisata = [

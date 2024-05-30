@@ -2,12 +2,12 @@
 
 @media(max-width: 789px) {
     .judulDestinasi{
-        transform: translate(0, -100%);
+        transform: translate(0, -150%);
     }
 }
 @media(min-width: 789px) {
     .judulDestinasi{
-        transform: translate(0,-200%);
+        transform: translate(0,-250%);
     }
 }
 

@@ -14,8 +14,14 @@ function IsiDua() {
     return(
         <div className="bungkusIsiDua">
             <div className="container-fluid isiDua px-0" id="mainSatu">
-                <p className="judulIsiDua" data-aos="fade-up" data-aos-delay="100">LAMPUNG</p>
-                <p className="judulTreasure" data-aos="fade-in" data-aos-delay="100">The Bounty Treasure</p>
+                <div className="containerJudulIsiDua">
+                    <p className="judulIsiDua" data-aos="fade-up" data-aos-delay="100">LAMPUNG</p>
+                </div>
+
+               <div className="containerTreasure">
+                    <p className="judulTreasure" data-aos="fade-in" data-aos-delay="100">The Bounty Treasure</p>
+               </div>
+
                     <div className="motto">
                         <div className="mottoLampung ">
                             <h1 className="petikDua" data-aos="fade-left" data-aos-delay="200">❝ Satu Bumi, Dua Masyarakat ❞</h1>

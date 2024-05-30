@@ -1,7 +1,8 @@
 .fotoYoutube{
-    background: linear-gradient( to bottom, rgb(0, 0, 0) 30%, rgba(118,88,39,1) 60%,  rgb(0, 0, 0) 99%);
+    background: linear-gradient( to bottom, rgb(0, 0, 0) 10%,   rgb(0, 0, 0) 80%);
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .containerIsiWisata{

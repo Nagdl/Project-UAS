@@ -77,13 +77,13 @@ function Navbar() {
                             <li className="nav-item mx-2">
                                 <Link className="nav-link" to="/" onClick={closeSidebar}>Home</Link>
                             </li>
-                            <li className="nav-item dropdown">
-                                <Link className="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Main</Link>
+                            {/* <li className="nav-item dropdown">
+                                <Link className="nav-link dropdown-toggle" to="/Main" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Main</Link>
                                 <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
-                                    <li><Link className="dropdown-item" to="#mainSatu" onClick={closeSidebar}>Lampung Motto</Link></li>
+                                    <li><Link className="dropdown-item" to="/Main #mainSatu" onClick={closeSidebar}>Lampung Motto</Link></li>
                                     <li><Link className="dropdown-item" to="#mainTiga" onClick={closeSidebar}>Highlight Destination</Link></li>
                                 </ul>
-                            </li>
+                            </li> */}
                             <li className="nav-item mx-2">
                                 <Link className="nav-link" to="/Wisata" onClick={closeSidebar}>Wisata</Link>
                             </li>

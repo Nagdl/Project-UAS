@@ -5,7 +5,7 @@
 }
 .videoYoutube{
     height: 40rem;
-    width: 50rem;
+    width: 52rem;
 }
 
 @media (max-width: 827px) {
@@ -21,7 +21,7 @@
 
 @media(min-width: 827px){
     .DeskripsiYoutube{
-        padding:0 200px 0 200px ;
+        padding: 2% 20% 0 20% ;
     }
 }
 

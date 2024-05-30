@@ -282,6 +282,6 @@
 }
 @media(min-width: 768px){
     .judulIsiDua{
-        transform: translate(0%, -10%);
+        transform: translate(0%, -30%);
     }
 }

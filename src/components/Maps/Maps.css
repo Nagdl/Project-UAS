@@ -14,7 +14,7 @@
 .judulWisata{
     transform: translateX(13%);
     font-family: "Montserrat", sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
     object-fit: cover;
     text-shadow: 20%;
@@ -51,7 +51,7 @@
 .Deskripsi{
     z-index: 222;
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     font-size: medium;
     background: rgba(180, 129, 69, 0.14);
     border-radius: 16px;
@@ -68,7 +68,7 @@
   
 .map-wrap {
     position: relative;
-    transform: translate(35%, -40%);
+    transform: translate(35%, -30%);
     width: 39%;
     z-index: 200;
     height: 329px;
@@ -92,12 +92,12 @@
 
 @media (max-width: 1111px) {
     .map-wrap {
-        transform: translate(25%, -45%);
+        transform: translate(25%, -55%);
     }
 }
 @media (max-width: 1000px) {
     .map-wrap {
-        transform: translate(5%, -55%);
+        transform: translate(5%, -65%);
     }
 }
 

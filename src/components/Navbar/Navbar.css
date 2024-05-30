@@ -4,11 +4,11 @@
 @media(max-width: 900px){
     /* SIDE BAR */
     .sidebar{
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(10px);
     }
 
-    /* DROP DOWN */
+    /* DROP DOWN
     .dropdown ul{
         background: transparent;
         box-shadow: none;
@@ -18,7 +18,7 @@
     .dropdown ul li a{
         font-size: 16px;
         font-weight: 400;
-    }
+    } */
 }
 
 /* BUNGKUS ISI CONTAINER */
@@ -42,7 +42,7 @@
         text-align: center;
         margin: 0;
         letter-spacing: 2px;
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 .bungkusLogo {
@@ -88,16 +88,16 @@
 .sideBody ul li a,
 .sideBody ul li a:after,
 .sideBody ul li a:before {
-    transition: all .7s;
+    transition: all .8s;
 }
     
 .sideBody a:hover {
     color: brown;
     background-color: transparent;
-    font-weight: 800;
+    font-weight: 750;
 }
 
-/* Dropdown */
+/* Dropdown
 .dropdown ul{
     border: none;
     box-shadow: none;
@@ -111,7 +111,7 @@
     color: white;
     font-size: 14px;
     font-weight: 400;
-}
+} */
 
 /* Transisi on scroll */
 .aktif{

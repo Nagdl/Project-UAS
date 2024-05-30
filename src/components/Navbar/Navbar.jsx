@@ -56,14 +56,14 @@ function Navbar() {
                 </div>
                 {/* Toggle Button */}
                 <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon bg-transparent"></span>
                 </button>
 
                 {/* SideBar */}
-                <div className="sidebar offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div className="sidebar offcanvas offcanvas-end bg-transparent" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     {/* Sidebar Header */}
-                    <div className="offcanvas-header text-white border-bottom">
-                        <h5 className="offcanvas-title" id="offcanvasNavbarLabel">LAMPCARA</h5>
+                    <div className="offcanvas-header text-white text-center">
+                        <h5 className="offcanvas-title judulNav" id="offcanvasNavbarLabel">LAMPCARA</h5>
                         <button type="button" className="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
 

@@ -31,6 +31,9 @@ function Navbar() {
         if (sidebar) {
             const bsOffcanvas = new window.bootstrap.Offcanvas(sidebar);
             bsOffcanvas.hide();
+            
+            // Menghapus padding-right yang ditambahkan oleh navbar setelah menutupnya
+            document.body.style.paddingRight = "0";
         }
 
         document.body.style.overflow = 'auto';
@@ -41,6 +44,7 @@ function Navbar() {
         if (sidebar) {
             const bsOffcanvas = new window.bootstrap.Offcanvas(sidebar);
             bsOffcanvas.hide();
+            document.body.style.paddingRight = "0";
         }
     };
 
@@ -69,23 +73,25 @@ function Navbar() {
                     <div className="sideBody offcanvas-body d-flex flex-column p-4">
                         <ul className="containSide navbar-nav justify-content-center align-item-center fs-5 flex-grow-1">
                             <li className="nav-item mx-2">
-                                <Link className="nav-link" to="/" onClick={closeSidebar}>Home</Link>
+                                <Link className="nav-link" to="/" >Home</Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Main</a>
-                                <ul className="dropdown dropdown-menu dropdown-menu-dark">
+                                <a className="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Main
+                                </a>
+                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a className="dropdown-item" href="#mainSatu" onClick={closeSidebar}>Lampung Motto</a></li>
                                     <li><a className="dropdown-item" href="#mainTiga" onClick={closeSidebar}>Highlight Destination</a></li>
                                 </ul>
                             </li>
                             <li className="nav-item mx-2">
-                                <Link className="nav-link" to="/Wisata" onClick={closeSidebar}>Wisata</Link>
+                                <Link className="nav-link" to="/Wisata" >Wisata</Link>
                             </li>
                             <li className="nav-item mx-2">
-                                <Link className="nav-link" to="/About" onClick={closeSidebar}>About Us</Link>
+                                <Link className="nav-link" to="/About" >About Us</Link>
                             </li>
                             <li className="nav-item mx-2">
-                                <Link className="nav-link" to="/ContactUs" onClick={closeSidebar}>Contact Us</Link>
+                                <Link className="nav-link" to="/ContactUs" >Contact Us</Link>
                             </li>
                         </ul>
                     </div>

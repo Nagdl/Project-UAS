@@ -27,14 +27,12 @@ function Navbar() {
     }, []);
 
     useEffect(() => {
-        // Close the off-canvas sidebar when the route changes
         const sidebar = document.getElementById('offcanvasNavbar');
         if (sidebar) {
             const bsOffcanvas = new window.bootstrap.Offcanvas(sidebar);
             bsOffcanvas.hide();
         }
 
-        // Reset the body's overflow style
         document.body.style.overflow = 'auto';
     }, [location]);
 
@@ -56,13 +54,13 @@ function Navbar() {
                 </div>
                 {/* Toggle Button */}
                 <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span className="navbar-toggler-icon bg-transparent"></span>
+                    <span className="navbar-toggler-icon"></span>
                 </button>
 
                 {/* SideBar */}
                 <div className="sidebar offcanvas offcanvas-end bg-transparent" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     {/* Sidebar Header */}
-                    <div className="offcanvas-header text-white text-center">
+                    <div className="offcanvas-header text-white text-center border-bottom">
                         <h5 className="offcanvas-title judulNav" id="offcanvasNavbarLabel">LAMPCARA</h5>
                         <button type="button" className="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>

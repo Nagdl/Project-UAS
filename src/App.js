@@ -6,6 +6,12 @@ import Home from "../src/components/Pages/Home";
 import About from "../src/components/Pages/About";
 import Contact from "../src/components/Pages/ContactUs";
 import WisataDesc from "./components/Pages/WisataDesc";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+document.body.removeAttribute("data-aos-easing");
+document.body.removeAttribute("data-aos-duration");
+document.body.removeAttribute("data-aos-delay");
+document.body.style.overflow = "auto";
 
 function App() {
   const { pathname } = useLocation();

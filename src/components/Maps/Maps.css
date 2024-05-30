@@ -82,7 +82,7 @@
     /* height: 100%;
     opacity: 1; */
     border-radius: 10px;
-    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in, height 0.5s ease-out;
 }
 
 .bungkusContent:hover .map{
@@ -92,18 +92,18 @@
 
 @media (max-width: 1111px) {
     .map-wrap {
-        transform: translate(25%, -30%);
+        transform: translate(25%, -45%);
     }
 }
 @media (max-width: 1000px) {
     .map-wrap {
-        transform: translate(5%, -40%);
+        transform: translate(5%, -55%);
     }
 }
 
 @media (max-width: 870px) {
     .map-wrap {
-        transform: translate(3%, -665px);
+        transform: translate(3%, -765px);
         position: absolute;
         z-index: 1000;
         height: 200px;
